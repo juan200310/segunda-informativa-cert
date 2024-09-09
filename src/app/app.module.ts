@@ -11,9 +11,6 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { FlipCardComponent } from './components/shared/flip-card/flip-card.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
-import { CertificadoTLComponent } from './pages/certificado-t-l/certificado-t-l.component';
-import { OripComponent } from './pages/orip/orip.component';
-import { SituacionesJuridicasComponent } from './pages/situaciones-juridicas/situaciones-juridicas.component';
 import { CardInfoSituacionesComponent } from './components/shared/card-info-situaciones/card-info-situaciones.component';
 import { GridInfoSituacionesComponent } from './components/grid-info-situaciones/grid-info-situaciones.component';
 import { BlogComponent } from './pages/blog/blog.component';
@@ -43,9 +40,6 @@ import { FooterComponent } from './components/footer/footer.component';
     AppComponent,
     HeadComponent,
     FlipCardComponent,
-    CertificadoTLComponent,
-    OripComponent,
-    SituacionesJuridicasComponent,
     CardInfoSituacionesComponent,
     GridInfoSituacionesComponent,
     BlogComponent,
