@@ -1,35 +1,158 @@
-<div class="center">
-  <h1 style="text-align: center;">Aquí encontrarás información detallada sobre los Certificados de Tradición y Libertad,
-    el sector inmobiliario y mucho más.</h1>
+<div class="head">
+  <br><br>
+  <div class="row">
+    <div class="col">
+      <h1><img width="50" src="../../../assets/Group 39513.png" alt=""> Blog inmobiliario</h1>
+    </div>
+    <div class="col">
+      <div class="container">
+        <button>Comprar certificado</button>
+      </div>
+    </div>
+  </div>
+
 </div>
 
-<div *ngIf="user" class="center"><button (click)="addPost(template)" class="button"><mat-icon>add</mat-icon></button></div>
+<div class="container-info">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="info">
+        <div class="row">
+          <div class="col-md-2"><img width="50" src="../../../assets/house.png" alt=""></div>
+          <div class="col-md-10">
+            <p>Información actualizada y relevante sobre el sector inmobiliario en Colombia.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="info">
+        <div class="row">
+          <div class="col-md-2"><img width="40" src="../../../assets/leaf.png" alt=""></div>
+          <div class="col-md-10">
+            <p>Contenido relacionado al Certificado de Tradición y Libertad.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div *ngIf="user" class="center"><button (click)="addPost(template)" class="button"><mat-icon>add</mat-icon></button></div> -->
 <div class="center">
-  <div class="container">
+  <div class="cards-grid">
     <div class="row">
+      <div class="col">
+        <div class="row">
+          <ng-container *ngFor="let card of cards1first">
 
-      <div *ngFor="let post of posts" class="col-md-3 col-sm-6 card-container">
-
-        <mat-card class="example-card">
-          <img [routerLink]="'/publicacion/'+post.urlTitle" [src]="post.image" alt="">
-
-          <mat-card-content>
-            <h2>{{ post.title }}</h2>
-            <p>{{ post.introduction }}</p>
-
-            <mat-card-actions *ngIf="user">
-              <div class="container">
-                <div class="row">
-                  <div class="col"> <button class="button" (click)="editPost(template,post)"> <mat-icon>edit</mat-icon>
-                    </button></div>
-                  <div class="col"><button class="button" (click)="deletePost(post)"> <mat-icon>delete</mat-icon>
-                    </button></div>
-                </div>
+            <div class="col card" [style]="'width:'+card.width+';'+'height:'+card.height+';'">
+              <div class="card-image">
+                <img src="../../../assets/{{card.image}}" alt="{{ card.title }}">
               </div>
-            </mat-card-actions>
-          </mat-card-content>
-        </mat-card>
+              <div class="card-content">
+                <p class="card-date">{{ card.date }}</p>
+                <h2 class="card-title">{{ card.title }}</h2>
+                <p class="card-description">{{ card.description }}</p>
+              </div>
+            </div>
 
+
+          </ng-container>
+        </div>
+        <div class="row">
+          <ng-container *ngFor="let card of cards1">
+
+            <div class="col card" [style]="'width:'+card.width+';'+'height:'+card.height+';'">
+              <div class="card-image">
+                <img src="../../../assets/{{card.image}}" alt="{{ card.title }}">
+              </div>
+              <div class="card-content">
+                <p class="card-date">{{ card.date }}</p>
+                <h2 class="card-title">{{ card.title }}</h2>
+                <p class="card-description">{{ card.description }}</p>
+              </div>
+            </div>
+
+
+          </ng-container>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row">
+          <ng-container *ngFor="let card of cards2">
+
+            <div class="col card" [style]="'width:'+card.width+';'+'height:'+card.height+';'">
+              <div class="card-image">
+                <img src="../../../assets/{{card.image}}" alt="{{ card.title }}">
+              </div>
+              <div class="card-content">
+                <p class="card-date">{{ card.date }}</p>
+                <h2 class="card-title">{{ card.title }}</h2>
+                <p class="card-description">{{ card.description }}</p>
+              </div>
+            </div>
+
+
+          </ng-container>
+        </div>
+        <div class="row">
+          <ng-container *ngFor="let card of cards2last">
+
+            <div class="col card" [style]="'width:'+card.width+';'+'height:'+card.height+';'">
+              <div class="card-image">
+                <img src="../../../assets/{{card.image}}" alt="{{ card.title }}">
+              </div>
+              <div class="card-content">
+                <p class="card-date">{{ card.date }}</p>
+                <h2 class="card-title">{{ card.title }}</h2>
+                <p class="card-description">{{ card.description }}</p>
+              </div>
+            </div>
+
+
+          </ng-container>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="head">
+  <br><br>
+  <div class="row">
+    <div class="col">
+      <h2>Lo mas leído</h2>
+    </div>
+    <div class="col">
+      <div class="container">
+        <input type="text" placeholder="Categorías">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<br>
+<div class="container">
+  <div class="mostr">
+    <div class="row">
+      <div *ngFor="let post of mostRead" class="col-md-6">
+        <div class="row">
+          <div class="col">
+            <img width="250" src="../../../assets/{{post.image}}" alt="">
+          </div>
+          <div class="col">
+            <h3>{{post.title}}</h3>
+            <p>{{post.description}}</p>
+            <p class="date">{{post.published_date}}</p>
+          </div>
+        </div>
+        <br><br>
       </div>
     </div>
   </div>
@@ -37,6 +160,6 @@
 
 
 
-<ng-template #template>
+<!-- <ng-template #template>
   <app-post-form [post]="editingPost"></app-post-form>
-</ng-template>
+</ng-template> -->

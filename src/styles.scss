@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #e9edf2!important;}
 
 /* Importing Bootstrap SCSS file. */
 @import "./node_modules/bootstrap/scss/bootstrap";
@@ -15,5 +15,28 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 @import "../node_modules/quill/dist/quill.snow.css";
 
 @import "../node_modules/font-awesome/css/font-awesome.css";
+
+@import '@angular/material/theming';
+// Importa el tema que quieras basar
+@include mat-core();
+
+// Define tus colores personalizados
+$custom-primary: mat-palette($mat-indigo);
+$custom-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// Crea tu tema personalizado
+$custom-theme: mat-light-theme(
+  (
+    color: (
+      primary: $custom-primary,
+      accent: $custom-accent,
+      warn: mat-palette($mat-red),
+    ),
+  )
+);
+
+// Aplica el tema
+@include angular-material-theme($custom-theme);
+
 
 

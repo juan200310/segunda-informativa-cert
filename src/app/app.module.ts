@@ -35,8 +35,17 @@ import { AngularEditorModule } from '@kolkov/angular-editor';
 import { MatSelectModule } from '@angular/material/select';
 import { LoginComponent } from './pages/login/login.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { InicioComponent } from './pages/inicio/inicio.component';
+
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
+import { CarouselModule as PrimeCarouselModule } from 'primeng/carousel';
+import { ButtonModule as primengbutton } from 'primeng/button';
+import { TagModule } from 'primeng/tag';
+
 @NgModule({
   declarations: [
+    
     AppComponent,
     HeadComponent,
     FlipCardComponent,
@@ -48,6 +57,7 @@ import { FooterComponent } from './components/footer/footer.component';
     PostComponent,
     LoginComponent,
     FooterComponent,
+    InicioComponent,
     
   ],
   imports: [
@@ -67,13 +77,19 @@ import { FooterComponent } from './components/footer/footer.component';
     AngularEditorModule,
     MatIconModule,
     ButtonModule,
+    MatDatepickerModule,
+    MatExpansionModule,
     MatSelectModule,
+    PrimeCarouselModule,
+    primengbutton, 
+    TagModule,
     CarouselModule.forRoot(),
     ModalModule.forRoot(),
     provideFirebaseApp(() => initializeApp({"projectId":"mega-informativo","appId":"1:334311439484:web:88a5a48afbd3d0ff8d1df9","storageBucket":"mega-informativo.appspot.com","apiKey":"AIzaSyA9wCdeKTFZzDz1YdEWPbPF1gHIrsj1XiU","authDomain":"mega-informativo.firebaseapp.com","messagingSenderId":"334311439484","measurementId":"G-9G67KFWTLD"})),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
-    provideStorage(() => getStorage())
+    provideStorage(() => getStorage()),
+    provideFirebaseApp(() => initializeApp({"projectId":"pagina-informativa-mega","appId":"1:873904710076:web:1a6fe796c614536b430bb9","storageBucket":"pagina-informativa-mega.appspot.com","apiKey":"AIzaSyD33IsxRGSvXU5ROoTj_hiBRcxWVnJikwU","authDomain":"pagina-informativa-mega.firebaseapp.com","messagingSenderId":"873904710076","measurementId":"G-T4QZ4X2RTD"}))
   ],
   providers: [],
   bootstrap: [AppComponent]

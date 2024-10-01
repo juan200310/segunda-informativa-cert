@@ -1,14 +1,14 @@
 {
   "targets": {
-    "mega-informativo": {
+    "pagina-informativa-mega": {
       "hosting": {
-        "registro-inmuebles": [
-          "mega-informativo"
+        "pagina-informativa-mega": [
+          "pagina-informativa-mega"
         ]
       }
     }
   },
   "projects": {
-    "default": "mega-informativo"
+    "default": "pagina-informativa-mega"
   }
 }

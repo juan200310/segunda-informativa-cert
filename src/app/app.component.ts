@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'registro-inmuebles';
+  title = 'pagina-informativa-mega';
   isMenuOpen = false;
 
   toggleMenu() {

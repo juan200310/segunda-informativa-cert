@@ -1,7 +1,7 @@
 {
   "hosting": [
     {
-      "target": "registro-inmuebles",
+      "target": "pagina-informativa-mega",
       "source": ".",
       "frameworksBackend": {}
     }
