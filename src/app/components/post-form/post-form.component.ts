@@ -1,9 +1,11 @@
-import { Component, Input, OnInit, OnChanges, SimpleChanges, AfterViewInit, ChangeDetectorRef } from '@angular/core';
+import { Component, Input, OnInit, OnChanges, SimpleChanges, AfterViewInit, ChangeDetectorRef, Output, EventEmitter } from '@angular/core';
 import { BsModalRef } from 'ngx-bootstrap/modal';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Storage, ref, uploadBytes, getDownloadURL } from '@angular/fire/storage';
 import { FirebaseService } from 'src/app/services/firebase.service';
 import { AngularEditorConfig } from '@kolkov/angular-editor';
+import Swal from 'sweetalert2';
+import Emitter from 'quill/core/emitter';
 @Component({
   selector: 'app-post-form',
   templateUrl: './post-form.component.html',
@@ -11,7 +13,7 @@ import { AngularEditorConfig } from '@kolkov/angular-editor';
 })
 export class PostFormComponent implements OnInit, OnChanges, AfterViewInit {
   @Input() post: any;
-
+  @Output() close = new EventEmitter<any>();
   postForm: FormGroup;
   isEdit: boolean = false;
   img: any;
@@ -69,6 +71,7 @@ export class PostFormComponent implements OnInit, OnChanges, AfterViewInit {
       introduction: ['', Validators.required],
       imageDescription: ['', Validators.required],
       urlTitle: ['', Validators.required,],
+      category: ['', Validators.required,],
     });
   }
 
@@ -103,7 +106,6 @@ export class PostFormComponent implements OnInit, OnChanges, AfterViewInit {
 
     this.imgPreview = this.post.image || this.imgPreview;
 
-    // Forzar la detección de cambios después de un breve retraso
     setTimeout(() => {
       this.cdr.detectChanges();
     }, 0);
@@ -136,16 +138,28 @@ export class PostFormComponent implements OnInit, OnChanges, AfterViewInit {
   }
 
   async savePost() {
+    Swal.fire({
+      position: 'top-end',
+      icon: 'info',
+      title: 'Guardando publicación',
+      showConfirmButton: false,
+    });
     if (this.postForm.valid) {
       const newPost = this.postForm.value;
+      newPost.fecha=new Date()
       if (this.img) {
+        Swal.update({title:'Guardando imágen'})
         newPost.image = await this.subirArchivo(this.img, 'publicaciones');
       } else if (this.post) {
         newPost.image = this.post.image; // Usar la imagen existente si no se actualiza
       }
       await this.firebase.setPost(newPost.urlTitle, newPost);
-
-      this.modalRef.hide();
+      Swal.fire({
+        title: "Excelente!",
+        text: "Publicación salvada exitosamente",
+        icon: "success"
+      });
+     this.close.emit()
     }
   }
 }

@@ -5,19 +5,28 @@ mat-toolbar {
     height: 100px;
     display: flex;
     justify-content: center; /* Center the navigation items */
-
+    position: fixed;
+    top:0;
+    z-index: 2;
+    width: 100vw;
     & a {
         text-decoration: none;
         color: white;
         text-align: center;
         flex: 1; /* Each link takes equal width */
         padding: 20px; /* Add some padding to increase clickable area */
+        height: 100%;
     }
 
     .spacer {
         flex: 1 1 auto;
     }
 }
+
+.active-link {
+    background-color: #004884;
+    color: white;
+  }
 
 /* Estilo para el título de la aplicación */
 .app-title {
@@ -41,6 +50,7 @@ mat-toolbar {
 @media screen and (max-width: 600px) {
     a {
         color: black !important;
+        
     }
 
     /* Oculta la lista de enlaces de navegación */
@@ -66,4 +76,7 @@ mat-toolbar {
     .nav-links.open {
         display: flex;
     }
+}
+.main{
+    margin-top: 110px;
 }

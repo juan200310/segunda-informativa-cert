@@ -1,18 +1,22 @@
 <mat-toolbar color="primary">
   <!-- Botón hamburguesa visible en dispositivos móviles y tabletas -->
-  <button mat-icon-button class="menu-button" aria-label="Toggle menu" (click)="toggleMenu()">
+  <button mat-icon-button class="menu-button" aria-label="Toggle menu" (click)="toggleMenu(active)">
       <mat-icon>menu</mat-icon>
   </button>
 
   <!-- Lista de enlaces de navegación -->
   <div class="nav-links" [class.open]="isMenuOpen">
-      <a mat-button (click)="toggleMenu()" routerLink="/inicio">Inicio</a>
-      <a mat-button (click)="toggleMenu()" href="#comprar-certiticado">Comprar certificado de tradición y libertad</a>
-      <a mat-button (click)="toggleMenu()" routerLink="/blog">Blog</a>
+      <a [ngClass]="{'active-link': active === 'inicio'}" mat-button (click)="toggleMenu('inicio')" routerLink="/inicio"><h1>Inicio</h1></a>
+      <a [ngClass]="{'active-link': active === 'comprar-certificado'}" 
+   mat-button 
+   (click)="toggleMenu('comprar-certificado'); navigateToFragment('comprar-certiticado')">
+  <h1>Comprar certificado de tradición y libertad</h1>
+</a>
+<a [ngClass]="{'active-link': active === 'blog'}" mat-button (click)="toggleMenu('blog')" routerLink="/blog"><h1>Blog</h1></a>
   </div>
 </mat-toolbar>
 
-<div class="main" (click)="toggleMenu()">
+<div class="main" (click)="toggleMenuActive(active)">
   <router-outlet></router-outlet>
   <app-footer></app-footer>
 </div>

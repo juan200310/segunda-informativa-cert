@@ -85,7 +85,6 @@ import { TagModule } from 'primeng/tag';
     TagModule,
     CarouselModule.forRoot(),
     ModalModule.forRoot(),
-    provideFirebaseApp(() => initializeApp({"projectId":"mega-informativo","appId":"1:334311439484:web:88a5a48afbd3d0ff8d1df9","storageBucket":"mega-informativo.appspot.com","apiKey":"AIzaSyA9wCdeKTFZzDz1YdEWPbPF1gHIrsj1XiU","authDomain":"mega-informativo.firebaseapp.com","messagingSenderId":"334311439484","measurementId":"G-9G67KFWTLD"})),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
     provideStorage(() => getStorage()),

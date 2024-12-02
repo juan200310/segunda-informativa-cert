@@ -1,169 +1,192 @@
-<div class="container mt-5">
-  <div class="row mb-4">
-    <div class="col">
-      <h2 class="title"><img src="../../../assets/page.png" alt="">Certificado de Tradición y Libertad</h2>
-    </div>
-  </div>
+<div class="main">
 
-  <!-- Card Section -->
-  <div class="row text-center">
-    <div class="col-md-4 mb-4">
-      <div class="card  shadow">
-        <div class="center">
-          <img src="../../../assets/Vector.png" alt="">
+  <div class="center-global">
+    <div class="container mt-5">
+
+      <div class="row mb-4">
+        <div class="col">
+          <h2 class="title"><img src="../../../assets/page.png" alt="">Certificado de Tradición y Libertad</h2>
         </div>
-        <br><br>
-        <p class="card-text">Conoce todo sobre el Certificado de Tradición</p>
-        <div class="btn-con">
-          <button class="btn btn-primary">Ver más</button>
+      </div>
+
+      <!-- Card Section -->
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="center">
+            <div class="card  shadow">
+              <div class="center">
+                <img src="../../../assets/Vector.png" alt="">
+              </div>
+              <br><br>
+              <p class="card-text">Conoce todo sobre el Certificado de Tradición</p>
+              <div class="btn-con">
+                <button (click)="navigateToFragment('todo')" class="btn btn-primary">Ver más</button>
+              </div>
+
+            </div>
+          </div>
+
         </div>
 
+        <div class="col-md-4 mb-4">
+          <div class="center">
+            <div class="card  shadow">
+              <div class="center">
+                <img src="../../../assets/stars.png" alt="">
+              </div>
+              <p class="card-text">
+                Tips, recomendaciones y novedades para que te mantengas informado
+                sobre el mundo del Certificado de Tradición
+              </p>
+              <div class="btn-con">
+                <button (click)="navigateToFragment('tips')" class="btn btn-primary">Ver más</button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="center">
+            <div class="card  shadow">
+              <div class="center">
+                <img src="../../../assets/shop.png" alt="">
+              </div>
+              <br><br>
+              <p class="card-text">
+                ¿Cómo puedo comprar un certificado de tradición y libertad?
+              </p>
+              <div class="btn-con">
+                <button (click)="navigateToFragment('comprar')" class="btn btn-primary">Ver más</button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
 
-    <div class="col-md-4 mb-4">
-      <div class="card  shadow">
-        <div class="center">
-          <img src="../../../assets/stars.png" alt="">
-        </div>
-        <p class="card-text">
-          Tips, recomendaciones y novedades para que te mantengas informado
-          sobre el mundo del Certificado de Tradición
+  </div>
+  <div class="boton">
+    <button type="submit" class="btn btn-primary compra">Comprar certificado</button>
+  </div>
+
+  <div class="container my-5" id="todo">
+    <!-- Título principal -->
+    <div class="row mb-4">
+      <div class="col">
+        <h2 class="title"><img src="../../../assets/page.png" alt="">Conoce todo sobre el Certificado de Tradición</h2>
+      </div>
+    </div>
+
+    <!-- Primera sección -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <h1 class="section-title pd-t">¿Qué es el Certificado de Tradición?</h1>
+        <p class="section-description pd-t">
+          El certificado de Tradición, expedido por la Superintendencia de Notariado y Registro (Supernotariado),
+          proporciona una cronología detallada de la información asociada a un inmueble, desde su origen hasta la fecha
+          de emisión del certificado.
         </p>
-        <div class="btn-con">
-          <button class="btn btn-primary">Ver más</button>
-        </div>
-
+      </div>
+      <div class="col-md-6">
+        <img src="../../../assets/realtor-giving-keys-new-owner 1.png" alt="Certificado de Tradición"
+          class="img-fluid rounded pd-70-r">
       </div>
     </div>
 
-    <div class="col-md-4 mb-4">
-      <div class="card  shadow">
-        <div class="center">
-          <img src="../../../assets/shop.png" alt="">
-        </div>
-        <br><br>
-        <p class="card-text">
-          ¿Cómo puedo comprar un certificado de tradición y libertad?
+    <!-- Segunda sección -->
+    <div class="row align-items-center">
+      <div class="col-md-6 order-md-2">
+        <h3 class="section-title">¿Para qué sirve el Certificado de Tradición?</h3>
+        <p class="section-description">
+          La información contenida en el certificado sirve para:
         </p>
-        <div class="btn-con">
-          <button class="btn btn-primary">Ver más</button>
-        </div>
-
+        <ul class="section-list">
+          <li><strong>Compraventa:</strong> Es indispensable para verificar el estado jurídico del inmueble antes de
+            realizar una compraventa, garantizando que no existan gravámenes, embargos o hipotecas que puedan afectar la
+            transacción.</li>
+          <li><strong>Préstamos hipotecarios:</strong> Las entidades financieras lo exigen como requisito para otorgar
+            un
+            préstamo hipotecario, ya que les permite evaluar el riesgo asociado a la inversión.</li>
+          <li><strong>Arrendamientos:</strong> Tanto el arrendador como el arrendatario pueden solicitarlo para
+            verificar
+            el estado legal del inmueble y proteger sus intereses durante el contrato de arrendamiento.</li>
+          <li><strong>Herencias y sucesiones:</strong> En caso de fallecimiento del propietario, el certificado es
+            necesario para realizar los trámites de sucesión y adjudicar la propiedad a los herederos legítimos.</li>
+        </ul>
+      </div>
+      <div class="col-md-6 order-md-1">
+        <img src="../../../assets/front-view-smiley-defocused-female-realtor-showing-miniature-house 1 (2).png"
+          alt="Certificado de Tradición Uso" class="img-fluid rounded pd-70-l">
       </div>
     </div>
   </div>
-</div>
-
-
-<div class="container my-5">
-  <!-- Título principal -->
-  <div class="row mb-4">
-    <div class="col">
-      <h2 class="title"><img src="../../../assets/page.png" alt="">Conoce todo sobre el Certificado de Tradición</h2>
-    </div>
+  <div class="boton">
+    <button type="submit" class="btn btn-primary compra">Comprar certificado</button>
   </div>
+  <div class="container accordion-con my-5" id="tips">
 
-  <!-- Primera sección -->
-  <div class="row align-items-center mb-5">
-    <div class="col-md-6">
-      <h1 class="section-title pd-t">¿Qué es el Certificado de Tradición?</h1>
-      <p class="section-description pd-t">
-        El certificado de Tradición, expedido por la Superintendencia de Notariado y Registro (Supernotariado),
-        proporciona una cronología detallada de la información asociada a un inmueble, desde su origen hasta la fecha
-        de emisión del certificado.
-      </p>
-    </div>
-    <div class="col-md-6">
-      <img src="../../../assets/realtor-giving-keys-new-owner 1.png" alt="Certificado de Tradición"
-        class="img-fluid rounded pd-70-r">
-    </div>
+    <table class="accordion">
+      <tr class="accordion-row">
+        <td class="accordion-cell">
+          <mat-accordion class="accordion-container">
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <mat-icon>home</mat-icon> Datos del inmueble
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p style="font-size: 15px;">Número de matrícula inmobiliaria, dirección, linderos, área, etc.</p>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </td>
+        <td class="accordion-cell">
+          <mat-accordion class="accordion-container">
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <mat-icon>gavel</mat-icon> Gravámenes
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p>Hipotecas, prendas, embargos y otras cargas que afectan la propiedad.</p>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </td>
+      </tr>
+      <tr class="accordion-row">
+        <td class="accordion-cell">
+          <mat-accordion class="accordion-container">
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <mat-icon>block</mat-icon> Limitaciones
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p>Servidumbres, usufructos y otras restricciones al uso del inmueble.</p>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </td>
+        <td class="accordion-cell">
+          <mat-accordion class="accordion-container">
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <mat-icon>history</mat-icon> Historial de propietarios
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <p>Nombres de los anteriores propietarios y fechas de las transferencias de dominio.</p>
+            </mat-expansion-panel>
+          </mat-accordion>
+        </td>
+      </tr>
+    </table>
+    
   </div>
+  <div class="certificado-container my-5" id="comprar-certiticado">
 
-  <!-- Segunda sección -->
-  <div class="row align-items-center">
-    <div class="col-md-6 order-md-2">
-      <h3 class="section-title">¿Para qué sirve el Certificado de Tradición?</h3>
-      <p class="section-description">
-        La información contenida en el certificado sirve para:
-      </p>
-      <ul class="section-list">
-        <li><strong>Compraventa:</strong> Es indispensable para verificar el estado jurídico del inmueble antes de
-          realizar una compraventa, garantizando que no existan gravámenes, embargos o hipotecas que puedan afectar la
-          transacción.</li>
-        <li><strong>Préstamos hipotecarios:</strong> Las entidades financieras lo exigen como requisito para otorgar un
-          préstamo hipotecario, ya que les permite evaluar el riesgo asociado a la inversión.</li>
-        <li><strong>Arrendamientos:</strong> Tanto el arrendador como el arrendatario pueden solicitarlo para verificar
-          el estado legal del inmueble y proteger sus intereses durante el contrato de arrendamiento.</li>
-        <li><strong>Herencias y sucesiones:</strong> En caso de fallecimiento del propietario, el certificado es
-          necesario para realizar los trámites de sucesión y adjudicar la propiedad a los herederos legítimos.</li>
-      </ul>
-    </div>
-    <div class="col-md-6 order-md-1">
-      <img src="../../../assets/front-view-smiley-defocused-female-realtor-showing-miniature-house 1 (2).png"
-        alt="Certificado de Tradición Uso" class="img-fluid rounded pd-70-l">
-    </div>
-  </div>
-</div>
-
-<div class="container accordion-con">
-
-  <table class="accordion">
-    <tr>
-      <td>
-        <mat-accordion class="accordion-container">
-          <mat-expansion-panel>
-            <mat-expansion-panel-header>
-              <mat-panel-title>
-                <mat-icon>home</mat-icon> Datos del inmueble
-              </mat-panel-title>
-            </mat-expansion-panel-header>
-            <p>Número de matrícula inmobiliaria, dirección, linderos, área, etc.</p>
-          </mat-expansion-panel>
-        </mat-accordion>
-      </td>
-      <td><mat-accordion class="accordion-container">
-          <mat-expansion-panel>
-            <mat-expansion-panel-header>
-              <mat-panel-title>
-                <mat-icon>gavel</mat-icon> Gravámenes
-              </mat-panel-title>
-            </mat-expansion-panel-header>
-            <p>Hipotecas, prendas, embargos y otras cargas que afectan la propiedad.</p>
-          </mat-expansion-panel>
-        </mat-accordion>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <mat-accordion class="accordion-container">
-          <mat-expansion-panel>
-            <mat-expansion-panel-header>
-              <mat-panel-title>
-                <mat-icon>block</mat-icon> Limitaciones
-              </mat-panel-title>
-            </mat-expansion-panel-header>
-            <p>Servidumbres, usufructos y otras restricciones al uso del inmueble.</p>
-          </mat-expansion-panel>
-        </mat-accordion>
-      </td>
-      <td>
-        <mat-accordion class="accordion-container">
-          <mat-expansion-panel>
-            <mat-expansion-panel-header>
-              <mat-panel-title>
-                <mat-icon>history</mat-icon> Historial de propietarios
-              </mat-panel-title>
-            </mat-expansion-panel-header>
-            <p>Nombres de los anteriores propietarios y fechas de las transferencias de dominio.</p>
-          </mat-expansion-panel>
-        </mat-accordion>
-      </td>
-    </tr>
-  </table>
-</div>
-<div class="certificado-container" id="comprar-certiticado">
-  
     <div class="certificado-card">
       <div class="header">
         <div class="row">
@@ -182,20 +205,20 @@
       <br>
       <form (submit)="comprarCertificado()">
         <div class="row">
-          <div class="col">
+          <div class="col-md-4">
             <div class="form-group">
               <label for="email">Correo electrónico: <span>*</span></label>
               <input type="email" id="email" placeholder="Correo" [(ngModel)]="email" name="email" required />
             </div>
           </div>
-          <div class="col">
+          <div class="col-md-4">
             <div class="form-group">
               <label for="document">Documento: <span>*</span></label>
               <input type="text" id="document" placeholder="Numero" [(ngModel)]="document" name="document" required />
             </div>
           </div>
-          <div class="col">
-            <button type="submit" class="btn btn-primary">Comprar certificado</button>
+          <div class="col-md-4">
+            <button type="submit" class="btn btn-primary compra">Comprar certificado</button>
           </div>
         </div>
 
@@ -203,46 +226,46 @@
 
       </form>
     </div>
- 
-</div>
-<br>
-<div class="container video">
-  <div class="main">
-    <h1>Te enseñamos como puedes conseguir tu Certificado de Tradición y Libertad.</h1>
-  <br>
-  <p>El Certificado de Tradición y Libertad es un documento que puedes comprar en línea aquí te explicamos cómo lo puedes descargar.</p>
+
+  </div>
+  <div class="container video my-5" id="comprar">
+    <div class="main">
+      <h1>Te enseñamos como puedes conseguir tu Certificado de Tradición y Libertad.</h1>
+      <br>
+      <p>El Certificado de Tradición y Libertad es un documento que puedes comprar en línea aquí te explicamos cómo lo
+        puedes descargar.</p>
+      <br><br>
+      <div class="center">
+        <iframe width="800" height="400" src="https://www.youtube.com/embed/g-vv7PCPkG8" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+      </div>
+      <br>
+      <div class="center">
+        <button>Ir a comprar Certificado de Tradición y Libertad</button>
+      </div>
+    </div>
+
+  </div>
   <br><br>
-  <div class="center">
-    <iframe width="800" height="400" src="https://www.youtube.com/embed/g-vv7PCPkG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-  </div>
-  <br>
-  <div class="center">
-    <button>Ir a comprar Certificado de Tradición y Libertad</button>
-  </div>
-  </div>
-  
-</div>
-<br><br>
-
-<div class="container">
-  <p-carousel 
-      [value]="blogPosts" 
-      [numVisible]="3" 
-      [numScroll]="3" 
-      [circular]="true" 
-      [responsiveOptions]="responsiveOptions" 
-      [autoplayInterval]="3000">
+  <div class="container">
+    <p-carousel [value]="blogPosts" [numVisible]="3" [numScroll]="3" [circular]="true"
+      [responsiveOptions]="responsiveOptions" [autoplayInterval]="3000">
       <ng-template let-product pTemplate="item">
         <div class="card-carrusel">
-          <img src="../../../assets/{{product.imageUrl}}" alt="Compra de vivienda en Colombia" class="card-carrusel-img">
+          <img src="../../../assets/{{product.imageUrl}}" alt="Compra de vivienda en Colombia"
+            class="card-carrusel-img">
           <div class="card-carrusel-body">
             <h5 class="card-carrusel-title">{{product.title}}</h5>
             <p class="card-carrusel-date">{{product.date}}</p>
           </div>
         </div>
-        
-          </ng-template>
-  </p-carousel>
+
+      </ng-template>
+    </p-carousel>
+  </div>
+  <br><br>
 </div>
-<br><br>

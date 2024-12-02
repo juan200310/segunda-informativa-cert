@@ -19,6 +19,8 @@ constructor(
     this.id = this.route.snapshot.paramMap.get('id') || '';
     this.firebase.getPost(this.id).then((res)=>{
       this.post=res.data()
+      this.post.views?this.post.views+=1:this.post.views=1
+      this.firebase.setPost(this.id,this.post)
     })
   }
 

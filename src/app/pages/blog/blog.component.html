@@ -1,16 +1,22 @@
 <div class="head">
   <br><br>
   <div class="row">
-    <div class="col">
+    <div class="col-md-6">
       <h1><img width="50" src="../../../assets/Group 39513.png" alt=""> Blog inmobiliario</h1>
     </div>
-    <div class="col">
+    <div class="col-md-6">
       <div class="container">
-        <button>Comprar certificado</button>
+        <div class="center-res">
+          <button>Comprar certificado</button>
+        </div>
+        
       </div>
     </div>
   </div>
 
+</div>
+<div class="find">
+  <h3>Aquí encontrarás:</h3>
 </div>
 
 <div class="container-info">
@@ -40,7 +46,7 @@
   </div>
 </div>
 
-<!-- <div *ngIf="user" class="center"><button (click)="addPost(template)" class="button"><mat-icon>add</mat-icon></button></div> -->
+<div *ngIf="user" class="center"><button (click)="addPost(template)" class="button"><mat-icon>add</mat-icon></button></div>
 <div class="center">
   <div class="cards-grid">
     <div class="row">
@@ -48,9 +54,9 @@
         <div class="row">
           <ng-container *ngFor="let card of cards1first">
 
-            <div class="col card" [style]="'width:'+card.width+';'+'height:'+card.height+';'">
+            <div routerLink="{{'publicacion/'+card.url}}" class="col card" [style]="'width:'+card.width+';'+'height:'+card.height+';'">
               <div class="card-image">
-                <img src="../../../assets/{{card.image}}" alt="{{ card.title }}">
+                <img src="{{card.image}}" alt="{{ card.title }}">
               </div>
               <div class="card-content">
                 <p class="card-date">{{ card.date }}</p>
@@ -65,9 +71,9 @@
         <div class="row">
           <ng-container *ngFor="let card of cards1">
 
-            <div class="col card" [style]="'width:'+card.width+';'+'height:'+card.height+';'">
+            <div routerLink="{{'publicacion/'+card.url}}" class="col card" [style]="'width:'+card.width+';'+'height:'+card.height+';'">
               <div class="card-image">
-                <img src="../../../assets/{{card.image}}" alt="{{ card.title }}">
+                <img src="{{card.image}}" alt="{{ card.title }}">
               </div>
               <div class="card-content">
                 <p class="card-date">{{ card.date }}</p>
@@ -84,9 +90,9 @@
         <div class="row">
           <ng-container *ngFor="let card of cards2">
 
-            <div class="col card" [style]="'width:'+card.width+';'+'height:'+card.height+';'">
+            <div routerLink="{{'publicacion/'+card.url}}" class="col card" [style]="'width:'+card.width+';'+'height:'+card.height+';'">
               <div class="card-image">
-                <img src="../../../assets/{{card.image}}" alt="{{ card.title }}">
+                <img src="{{card.image}}" alt="{{ card.title }}">
               </div>
               <div class="card-content">
                 <p class="card-date">{{ card.date }}</p>
@@ -101,9 +107,9 @@
         <div class="row">
           <ng-container *ngFor="let card of cards2last">
 
-            <div class="col card" [style]="'width:'+card.width+';'+'height:'+card.height+';'">
+            <div routerLink="{{'publicacion/'+card.url}}" class="col card" [style]="'width:'+card.width+';'+'height:'+card.height+';'">
               <div class="card-image">
-                <img src="../../../assets/{{card.image}}" alt="{{ card.title }}">
+                <img src="{{card.image}}" alt="{{ card.title }}">
               </div>
               <div class="card-content">
                 <p class="card-date">{{ card.date }}</p>
@@ -121,16 +127,18 @@
 
   </div>
 </div>
-
+<div class="boton">
+  <button type="submit" class="btn btn-primary compra">Comprar certificado</button>
+</div>
 <div class="head">
   <br><br>
   <div class="row">
     <div class="col">
-      <h2>Lo mas leído</h2>
+      <h2>{{searchQuery===""?'Lo mas leído':'Resultados para: '+searchQuery}}</h2>
     </div>
     <div class="col">
       <div class="container">
-        <input type="text" placeholder="Categorías">
+        <input [(ngModel)]="searchQuery" (keyup)="buscar()" type="text" placeholder="Categorías">
       </div>
     </div>
   </div>
@@ -138,28 +146,32 @@
 </div>
 
 <br>
-<div class="container">
+<div class="contain">
   <div class="mostr">
-    <div class="row">
-      <div *ngFor="let post of mostRead" class="col-md-6">
+    <div class="row" *ngIf="results && results.length > 0; else noResults">
+      <div routerLink="{{'publicacion/'+post.url}}" *ngFor="let post of results" class="col-md-6">
         <div class="row">
           <div class="col">
-            <img width="250" src="../../../assets/{{post.image}}" alt="">
+            <img width="250" src="{{ post.image }}" alt="">
           </div>
           <div class="col">
-            <h3>{{post.title}}</h3>
-            <p>{{post.description}}</p>
-            <p class="date">{{post.published_date}}</p>
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.description }}</p>
+            <p class="date">{{ post.date }}</p>
           </div>
         </div>
         <br><br>
       </div>
     </div>
+    <ng-template #noResults>
+      <p class="no-results">No se encontraron resultados.</p>
+    </ng-template>
   </div>
 </div>
 
 
 
-<!-- <ng-template #template>
-  <app-post-form [post]="editingPost"></app-post-form>
-</ng-template> -->
+
+<ng-template #template>
+  <app-post-form (close)="modalRef?.hide()" [post]="editingPost"></app-post-form>
+</ng-template>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inicio',
@@ -49,7 +50,7 @@ export class InicioComponent {
     console.log(`Email: ${this.email}, Document: ${this.document}`);
     
   }
-  constructor(){
+  constructor(private router: Router){
     this.responsiveOptions = [
       {
           breakpoint: '1199px',
@@ -68,6 +69,8 @@ export class InicioComponent {
       }
   ];
   }
- 
+  navigateToFragment(fragment: string): void {
+    this.router.navigate(['inicio'], { fragment });
+  }
 
 }

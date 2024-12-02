@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { BlogComponent } from './pages/blog/blog.component';
 import { PostComponent } from './pages/post/post.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -15,14 +15,14 @@ const routes: Routes = [
      path:'blog',
      component:BlogComponent
    },
-  // {
-  //   path:'publicacion/:id',
-  //   component:PostComponent
-  // },
-  // {
-  //   path:'login',
-  //   component:LoginComponent
-  // },
+  {
+    path:'blog/publicacion/:id',
+    component:PostComponent
+  },
+  {
+    path:'login',
+    component:LoginComponent
+  },
   {
     path: '',
     pathMatch: 'full',
@@ -33,9 +33,14 @@ const routes: Routes = [
     redirectTo: 'inicio',
   },
 ];
+const routerOptions: ExtraOptions = {
+  scrollPositionRestoration: 'enabled',  // Mantiene la posición al navegar
+  anchorScrolling: 'enabled',            // Habilita el scroll hacia fragmentos
+  scrollOffset: [0, 64]                  // Opcional: ajusta el desplazamiento (ej. por una barra fija)
+};
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,routerOptions)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
