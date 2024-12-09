@@ -9,7 +9,7 @@
         <div class="center-res">
           <button>Comprar certificado</button>
         </div>
-        
+
       </div>
     </div>
   </div>
@@ -46,7 +46,8 @@
   </div>
 </div>
 
-<div *ngIf="user" class="center"><button (click)="addPost(template)" class="button"><mat-icon>add</mat-icon></button></div>
+<div *ngIf="user" class="center"><button (click)="addPost(template)" class="button"><mat-icon>add</mat-icon></button>
+</div>
 <div class="center">
   <div class="cards-grid">
     <div class="row">
@@ -54,7 +55,8 @@
         <div class="row">
           <ng-container *ngFor="let card of cards1first">
 
-            <div routerLink="{{'publicacion/'+card.url}}" class="col card" [style]="'width:'+card.width+';'+'height:'+card.height+';'">
+            <div routerLink="{{'publicacion/'+card.url}}" class="col card"
+              [style]="'width:'+card.width+';'+'height:'+card.height+';'">
               <div class="card-image">
                 <img src="{{card.image}}" alt="{{ card.title }}">
               </div>
@@ -71,7 +73,8 @@
         <div class="row">
           <ng-container *ngFor="let card of cards1">
 
-            <div routerLink="{{'publicacion/'+card.url}}" class="col card" [style]="'width:'+card.width+';'+'height:'+card.height+';'">
+            <div routerLink="{{'publicacion/'+card.url}}" class="col card"
+              [style]="'width:'+card.width+';'+'height:'+card.height+';'">
               <div class="card-image">
                 <img src="{{card.image}}" alt="{{ card.title }}">
               </div>
@@ -90,7 +93,8 @@
         <div class="row">
           <ng-container *ngFor="let card of cards2">
 
-            <div routerLink="{{'publicacion/'+card.url}}" class="col card" [style]="'width:'+card.width+';'+'height:'+card.height+';'">
+            <div routerLink="{{'publicacion/'+card.url}}" class="col card"
+              [style]="'width:'+card.width+';'+'height:'+card.height+';'">
               <div class="card-image">
                 <img src="{{card.image}}" alt="{{ card.title }}">
               </div>
@@ -107,7 +111,8 @@
         <div class="row">
           <ng-container *ngFor="let card of cards2last">
 
-            <div routerLink="{{'publicacion/'+card.url}}" class="col card" [style]="'width:'+card.width+';'+'height:'+card.height+';'">
+            <div routerLink="{{'publicacion/'+card.url}}" class="col card"
+              [style]="'width:'+card.width+';'+'height:'+card.height+';'">
               <div class="card-image">
                 <img src="{{card.image}}" alt="{{ card.title }}">
               </div>
@@ -148,16 +153,30 @@
 <br>
 <div class="contain">
   <div class="mostr">
-    <div class="row" *ngIf="results && results.length > 0; else noResults">
-      <div routerLink="{{'publicacion/'+post.url}}" *ngFor="let post of results" class="col-md-6">
+    <div class="row" *ngIf="paginatedResults && paginatedResults.length > 0; else noResults">
+      <div *ngFor="let post of paginatedResults" class="col-md-6">
         <div class="row">
           <div class="col">
-            <img width="250" src="{{ post.image }}" alt="">
+            <div class="img_container">
+              <img class="img_post" routerLink="{{'publicacion/'+post.url}}" src="{{ post.image }}" alt="">
+            </div>
           </div>
           <div class="col">
             <h3>{{ post.title }}</h3>
             <p>{{ post.description }}</p>
             <p class="date">{{ post.date }}</p>
+            <div class="row" *ngIf="user && post.id!='none'">
+              <div class="col">
+                <button (click)="deletePost(post)" mat-button color="warn">
+                  <mat-icon>delete</mat-icon>
+                </button>
+              </div>
+              <div class="col">
+                <button (click)="editPost(template,post)" mat-button color="primary">
+                  <mat-icon>edit</mat-icon>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
         <br><br>
@@ -166,11 +185,19 @@
     <ng-template #noResults>
       <p class="no-results">No se encontraron resultados.</p>
     </ng-template>
+   
+    <div class="pagination" *ngIf="paginatedResults && paginatedResults.length > 0;">
+      <button mat-icon-button (click)="changePage(currentPage - 1)" [disabled]="currentPage === 1">
+        <mat-icon>navigate_before</mat-icon>
+      </button>
+      <span>Página {{ currentPage }} de {{ totalPages }}</span>
+      <button mat-icon-button (click)="changePage(currentPage + 1)" [disabled]="currentPage === totalPages">
+        <mat-icon>navigate_next</mat-icon>
+      </button>
+    </div>
   </div>
 </div>
-
-
-
+<br>
 
 <ng-template #template>
   <app-post-form (close)="modalRef?.hide()" [post]="editingPost"></app-post-form>

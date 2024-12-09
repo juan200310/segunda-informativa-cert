@@ -18,29 +18,29 @@ export class PostFormComponent implements OnInit, OnChanges, AfterViewInit {
   isEdit: boolean = false;
   img: any;
   imgPreview: any = "../../../assets/pre-img.jpg";
-  text:string="<div><p>aewfwef	wef</p></div>"
+  text: string = "<div><p>aewfwef	wef</p></div>"
   editorConfig: AngularEditorConfig = {
     editable: true,
-      spellcheck: true,
-      height: '200px',
-      minHeight: '0',
-      maxHeight: 'auto',
-      width: 'auto',
-      minWidth: '0',
-      translate: 'yes',
-      enableToolbar: true,
-      showToolbar: true,
-      placeholder: 'Escriba el cuerpo del post...',
-      defaultParagraphSeparator: '',
-      defaultFontName: '',
-      defaultFontSize: '',
-      fonts: [
-        {class: 'arial', name: 'Arial'},
-        {class: 'times-new-roman', name: 'Times New Roman'},
-        {class: 'calibri', name: 'Calibri'},
-        {class: 'comic-sans-ms', name: 'Comic Sans MS'}
-      ],
-      customClasses: [
+    spellcheck: true,
+    height: '200px',
+    minHeight: '0',
+    maxHeight: 'auto',
+    width: 'auto',
+    minWidth: '0',
+    translate: 'yes',
+    enableToolbar: true,
+    showToolbar: true,
+    placeholder: 'Escriba el cuerpo del post...',
+    defaultParagraphSeparator: '',
+    defaultFontName: '',
+    defaultFontSize: '',
+    fonts: [
+      { class: 'arial', name: 'Arial' },
+      { class: 'times-new-roman', name: 'Times New Roman' },
+      { class: 'calibri', name: 'Calibri' },
+      { class: 'comic-sans-ms', name: 'Comic Sans MS' }
+    ],
+    customClasses: [
       {
         name: 'quote',
         class: 'quote',
@@ -56,8 +56,8 @@ export class PostFormComponent implements OnInit, OnChanges, AfterViewInit {
       },
     ],
     uploadUrl: 'v1/image',
-    
-};
+
+  };
   constructor(
     public modalRef: BsModalRef,
     private fb: FormBuilder,
@@ -98,7 +98,8 @@ export class PostFormComponent implements OnInit, OnChanges, AfterViewInit {
       title: this.post.title,
       introduction: this.post.introduction,
       imageDescription: this.post.imageDescription,
-      urlTitle: this.post.urlTitle
+      urlTitle: this.post.urlTitle,
+      category: this.post.category
     });
 
     console.log(this.post)
@@ -146,9 +147,9 @@ export class PostFormComponent implements OnInit, OnChanges, AfterViewInit {
     });
     if (this.postForm.valid) {
       const newPost = this.postForm.value;
-      newPost.fecha=new Date()
+      newPost.fecha = new Date()
       if (this.img) {
-        Swal.update({title:'Guardando imágen'})
+        Swal.update({ title: 'Guardando imágen' })
         newPost.image = await this.subirArchivo(this.img, 'publicaciones');
       } else if (this.post) {
         newPost.image = this.post.image; // Usar la imagen existente si no se actualiza
@@ -159,7 +160,7 @@ export class PostFormComponent implements OnInit, OnChanges, AfterViewInit {
         text: "Publicación salvada exitosamente",
         icon: "success"
       });
-     this.close.emit()
+      this.close.emit()
     }
   }
 }

@@ -253,13 +253,15 @@
 
   <div class="container">
     <p-carousel [value]="blogPosts" [numVisible]="3" [numScroll]="3" [circular]="true"
-      [responsiveOptions]="responsiveOptions" [autoplayInterval]="3000">
+      [responsiveOptions]="responsiveOptions" [autoplayInterval]="100000000">
       <ng-template let-product pTemplate="item">
-        <div class="card-carrusel">
-          <img src="../../../assets/{{product.imageUrl}}" alt="Compra de vivienda en Colombia"
-            class="card-carrusel-img">
+        <div class="card-carrusel" >
+          <div class="img_container">
+          <img src="{{product.imageUrl}}" alt="Compra de vivienda en Colombia"
+            class="card-carrusel-img ">
+          </div>
           <div class="card-carrusel-body">
-            <h5 class="card-carrusel-title">{{product.title}}</h5>
+            <h5 style="cursor: pointer;" routerLink="{{'publicacion/'+product.url}}" class="card-carrusel-title">{{product.title}}</h5>
             <p class="card-carrusel-date">{{product.date}}</p>
           </div>
         </div>
