@@ -28,6 +28,7 @@ interface Departamento {
 })
 export class DepartamentoComponent implements OnInit {
   departamentoId: string | null = null;
+  municipioId: string | null = null;
   departamentoSeleccionado: Departamento | null = null;
   searchMunicipio: string = '';
 
@@ -39,6 +40,7 @@ export class DepartamentoComponent implements OnInit {
   ngOnInit(): void {
     this.route.queryParamMap.subscribe(params => {
       this.departamentoId = params.get('id');
+      this.municipioId = params.get('idMunicipio');
 
       if (this.departamentoId) {
         this.http.get<{ departamentos: Departamento[] }>('assets/json/departments.json')
@@ -47,6 +49,15 @@ export class DepartamentoComponent implements OnInit {
               const departamentos = data.departamentos;
               this.departamentoSeleccionado =
                 departamentos.find(d => d.codigo === this.departamentoId) || null;
+
+              if (this.departamentoSeleccionado && this.municipioId) {
+                const municipioSeleccionado = this.departamentoSeleccionado.municipios.find(
+                  m => m.codigo === this.municipioId
+                );
+                if (municipioSeleccionado) {
+                  this.searchMunicipio = municipioSeleccionado.nombre;
+                }
+              }
             },
             error: (err) => {
               console.error('Error cargando JSON:', err);
@@ -62,5 +73,4 @@ export class DepartamentoComponent implements OnInit {
       mun.nombre.toLowerCase().startsWith(this.searchMunicipio.toLowerCase())
     );
   }
-
 }

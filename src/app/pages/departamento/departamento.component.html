@@ -1,10 +1,8 @@
 <h1>Directorio de Oficinas de registro de instrumentos públicos en Colombia</h1>
 <p>Encuentra la oficina de registro en Colombia más cercana</p>
 
-<!-- Botón de volver -->
 <button routerLink="/directorio">⬅ Volver</button>
 
-<!-- Input para filtrar por municipio -->
 <div *ngIf="departamentoSeleccionado">
   <input
     type="text"
@@ -14,16 +12,13 @@
 </div>
 
 <div *ngIf="departamentoSeleccionado; else noDepto">
-
   <div *ngFor="let municipio of filteredMunicipios">
-
     <div *ngFor="let oficina of municipio.informacion" class="oficina">
       <p><strong>{{ oficina.nombre_oficina }}</strong></p>
       <p><strong>Correo electrónico:</strong> {{ oficina.correo }}</p>
       <p><strong>Teléfono:</strong> {{ oficina.telefono }}</p>
       <p><strong>Dirección:</strong> {{ oficina.direccion }}</p>
     </div>
-
     <hr />
   </div>
 </div>
