@@ -44,6 +44,7 @@ import { ButtonModule as primengbutton } from 'primeng/button';
 import { TagModule } from 'primeng/tag';
 import { DirectorioComponent } from './pages/directorio/directorio.component';
 import { PreguntasFrecuentesComponent } from './pages/preguntas-frecuentes/preguntas-frecuentes.component';
+import { DepartamentoComponent } from './pages/departamento/departamento.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { PreguntasFrecuentesComponent } from './pages/preguntas-frecuentes/pregu
     FooterComponent,
     InicioComponent,
     DirectorioComponent,
-    PreguntasFrecuentesComponent
+    PreguntasFrecuentesComponent,
+    DepartamentoComponent
   ],
   imports: [
     BrowserModule,

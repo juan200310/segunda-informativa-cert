@@ -6,6 +6,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { DirectorioComponent } from './pages/directorio/directorio.component';
 import { PreguntasFrecuentesComponent } from './pages/preguntas-frecuentes/preguntas-frecuentes.component';
+import { DepartamentoComponent } from './pages/departamento/departamento.component';
 
 const routes: Routes = [
 
@@ -32,6 +33,9 @@ const routes: Routes = [
   {
     path:'directorio',
     component:DirectorioComponent
+  },
+  { path: 'departamento',
+    component: DepartamentoComponent
   },
   {
     path: '',
