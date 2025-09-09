@@ -42,10 +42,12 @@ import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
 import { CarouselModule as PrimeCarouselModule } from 'primeng/carousel';
 import { ButtonModule as primengbutton } from 'primeng/button';
 import { TagModule } from 'primeng/tag';
+import { DirectorioComponent } from './pages/directorio/directorio.component';
+import { PreguntasFrecuentesComponent } from './pages/preguntas-frecuentes/preguntas-frecuentes.component';
 
 @NgModule({
   declarations: [
-    
+
     AppComponent,
     HeadComponent,
     FlipCardComponent,
@@ -58,7 +60,8 @@ import { TagModule } from 'primeng/tag';
     LoginComponent,
     FooterComponent,
     InicioComponent,
-    
+    DirectorioComponent,
+    PreguntasFrecuentesComponent
   ],
   imports: [
     BrowserModule,
@@ -81,7 +84,7 @@ import { TagModule } from 'primeng/tag';
     MatExpansionModule,
     MatSelectModule,
     PrimeCarouselModule,
-    primengbutton, 
+    primengbutton,
     TagModule,
     CarouselModule.forRoot(),
     ModalModule.forRoot(),

@@ -1,0 +1,27 @@
+.buscadores {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+
+  input {
+    padding: 8px;
+    width: 250px;
+  }
+}
+
+.departamento {
+  margin-bottom: 20px;
+
+  h4 {
+    margin: 0 0 8px 0;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+
+  select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+}

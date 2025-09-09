@@ -1,1 +1,38 @@
-<h1>DIRECTORIOOOo</h1>
+<h1>Directorio de Oficinas de registro de instrumentos públicos en Colombia</h1>
+
+<p>
+  Encuentra la oficina de registro en Colombia más cercana
+</p>
+
+<div class="buscadores">
+  <input
+    type="text"
+    placeholder="Buscar por departamento"
+    [(ngModel)]="searchDepartamento"
+  />
+  <input
+    type="text"
+    placeholder="Buscar por municipio"
+    [(ngModel)]="searchMunicipio"
+  />
+</div>
+
+<h3>Conoce el listado aquí</h3>
+
+<div *ngFor="let departamento of filteredDepartamentos">
+  <select>
+    <!-- Opción fija como encabezado (placeholder del select) -->
+    <option value="" disabled selected>
+      {{ departamento.nombre }}
+    </option>
+
+    <!-- Municipios -->
+    <option
+      *ngFor="let municipio of departamento.municipios"
+      [value]="municipio.codigo"
+    >
+      {{ municipio.nombre }}
+    </option>
+  </select>
+</div>
+
