@@ -7,12 +7,16 @@
   <!-- Lista de enlaces de navegación -->
   <div class="nav-links" [class.open]="isMenuOpen">
       <a [ngClass]="{'active-link': active === 'inicio'}" mat-button (click)="toggleMenu('inicio')" routerLink="/inicio"><h1>Inicio</h1></a>
-      <a [ngClass]="{'active-link': active === 'comprar-certificado'}" 
-   mat-button 
+      <a [ngClass]="{'active-link': active === 'comprar-certificado'}"
+   mat-button
    (click)="toggleMenu('comprar-certificado'); navigateToFragment('comprar-certiticado')">
   <h1>Comprar certificado de tradición y libertad</h1>
 </a>
 <a [ngClass]="{'active-link': active === 'blog'}" mat-button (click)="toggleMenu('blog')" routerLink="/blog"><h1>Blog</h1></a>
+<a [ngClass]="{'active-link': active === 'preguntas-frecuentes'}" mat-button (click)="toggleMenu('preguntas-frecuentes')" routerLink="/preguntas-frecuentes"><h1>Peguntas frecuentes</h1></a>
+<a [ngClass]="{'active-link': active === 'directorio'}" mat-button (click)="toggleMenu('directorio')" routerLink="/directorio"><h1>Directorio de
+  oficinas de registro</h1></a>
+
   </div>
 </mat-toolbar>
 

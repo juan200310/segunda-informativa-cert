@@ -4,6 +4,8 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { PostComponent } from './pages/post/post.component';
 import { LoginComponent } from './pages/login/login.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
+import { DirectorioComponent } from './pages/directorio/directorio.component';
+import { PreguntasFrecuentesComponent } from './pages/preguntas-frecuentes/preguntas-frecuentes.component';
 
 const routes: Routes = [
 
@@ -22,6 +24,14 @@ const routes: Routes = [
   {
     path:'login',
     component:LoginComponent
+  },
+  {
+    path:'preguntas-frecuentes',
+    component:PreguntasFrecuentesComponent
+  },
+  {
+    path:'directorio',
+    component:DirectorioComponent
   },
   {
     path: '',
