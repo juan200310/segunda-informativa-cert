@@ -33,13 +33,20 @@ h2 {
 }
 
 .departament_list select {
-  padding: 10px 15px;
+  padding: 10px 40px 10px 15px;
   border-radius: 25px;
   border: 1px solid #ccc;
   outline: none;
-  width: 100%;
+  width: 85%;
   margin-bottom: 15px;
   transition: all 0.3s ease;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background: white url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 100 100'><path d='M30 20 L70 50 L30 80' stroke='%2302328C' stroke-width='8' fill='none' /></svg>") no-repeat right 15px center;
+  background-size: 16px;
 }
 
 .departament_list select:focus {
@@ -47,8 +54,78 @@ h2 {
   box-shadow: 0 0 5px rgba(2, 50, 140, 0.4);
 }
 
+
 .departament_list > div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 200px;
+  gap: 16px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center; /* centra horizontal */
+  align-items: center;     /* centra vertical */
+}
+
+.card span {
+  position: relative; /* ya no absoluto */
+  z-index: 2;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+.card.big {
+  grid-row: span 2;
+}
+
+.plus {
+  top: 12px;
+  right: 12px;
+  background: rgba(255,255,255,0.9);
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.card span,
+.card .plus {
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.departaments_images_list{
+  margin-bottom: 50px;
+  margin-top: 50px;
 }

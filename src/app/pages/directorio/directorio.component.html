@@ -16,6 +16,24 @@
     [(ngModel)]="searchMunicipio"
   />
 </div>
+<div class="departaments_images_list">
+  <div class="grid-container">
+    <div
+      class="card"
+      *ngFor="let dep of departamentosImgs; let i = index"
+      [ngClass]="{ big: i === 0 }"
+      [style.backgroundImage]="'url(' + dep.img + ')'"
+    >
+      <span>{{ dep.nombre }}</span>
+      <a
+        [routerLink]="['/departamento']"
+        [queryParams]="{ depId: dep.depId, citId: dep.citId }"
+      >
+        <button class="plus">+</button>
+      </a>
+    </div>
+  </div>
+</div>
 
 <div class="departament_list">
   <h2>Conoce el listado aquí</h2>

@@ -31,6 +31,16 @@ export class DirectorioComponent implements OnInit {
   searchDepartamento: string = '';
   searchMunicipio: string = '';
 
+  departamentosImgs = [
+    { nombre: 'Bogotá', img: 'assets/deps/bogota.png', depId: '11'},
+    { nombre: 'Medellín', img: 'assets/deps/medellin.png', depId: '05', citId: '05001' },
+    { nombre: 'Bolívar', img: 'assets/deps/bolivar.png', depId: '13'},
+    { nombre: 'Atlántico', img: 'assets/deps/atlantico.png', depId: '08'},
+    { nombre: 'Cundinamarca', img: 'assets/deps/cundinamarca.png', depId: '25' },
+    { nombre: 'Santander', img: 'assets/deps/santander.png', depId: '68'},
+    { nombre: 'Valle del Cauca', img: 'assets/deps/valle.png', depId: '76'},
+    { nombre: 'Nariño', img: 'assets/deps/narino.png', depId: '52'}
+  ];
   constructor(private http: HttpClient, private router: Router) {}
 
   ngOnInit(): void {
