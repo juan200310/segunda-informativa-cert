@@ -39,8 +39,8 @@ export class DepartamentoComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.queryParamMap.subscribe(params => {
-      this.departamentoId = params.get('id');
-      this.municipioId = params.get('idMunicipio');
+      this.departamentoId = params.get('depId');
+      this.municipioId = params.get('citId');
 
       if (this.departamentoId) {
         this.http.get<{ departamentos: Departamento[] }>('assets/json/departments.json')

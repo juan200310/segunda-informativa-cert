@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 interface Oficina {
   nombre_oficina: string;
@@ -31,7 +31,7 @@ export class DirectorioComponent implements OnInit {
   searchDepartamento: string = '';
   searchMunicipio: string = '';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private router: Router) {}
 
   ngOnInit(): void {
     this.http.get<{ departamentos: Departamento[] }>('assets/json/departments.json')
@@ -53,5 +53,16 @@ export class DirectorioComponent implements OnInit {
         )
       }))
       .filter(dep => dep.municipios.length > 0);
+  }
+
+  onMunicipioSeleccionado(event: Event, depId: string): void {
+    const selectElement = event.target as HTMLSelectElement;
+    const citId = selectElement.value;
+
+    if (citId) {
+      this.router.navigate(['/departamento'], {
+        queryParams: { depId, citId }
+      });
+    }
   }
 }
