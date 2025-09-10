@@ -17,23 +17,18 @@
   />
 </div>
 
-<h3>Conoce el listado aquí</h3>
+<div class="departament_list">
+  <h2>Conoce el listado aquí</h2>
 
-<div *ngFor="let departamento of filteredDepartamentos">
-  <select
-    (change)="onMunicipioSeleccionado($event, departamento.codigo)"
-  >
-    <!-- Opción fija como encabezado (placeholder del select) -->
-    <option value="" disabled selected>
-      {{ departamento.nombre }}
-    </option>
-
-    <!-- Municipios -->
-    <option
-      *ngFor="let municipio of departamento.municipios"
-      [value]="municipio.codigo"
-    >
-      {{ municipio.nombre }}
-    </option>
-  </select>
+  <div class="grid-selects">
+    <div *ngFor="let departamento of filteredDepartamentos; trackBy: trackByDep">
+      <select (change)="onMunicipioSeleccionado($event, departamento.codigo)">
+        <option value="" disabled selected>{{ departamento.nombre }}</option>
+        <option *ngFor="let municipio of departamento.municipios; trackBy: trackByMun"
+                [value]="municipio.codigo">
+          {{ municipio.nombre }}
+        </option>
+      </select>
+    </div>
+  </div>
 </div>

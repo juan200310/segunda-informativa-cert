@@ -65,4 +65,12 @@ export class DirectorioComponent implements OnInit {
       });
     }
   }
+
+  trackByDep(index: number, item: Departamento) {
+    return item.codigo;
+  }
+
+  trackByMun(index: number, item: Municipio) {
+    return item.codigo;
+  }
 }
