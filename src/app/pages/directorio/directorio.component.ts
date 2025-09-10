@@ -31,6 +31,10 @@ export class DirectorioComponent implements OnInit {
   searchDepartamento: string = '';
   searchMunicipio: string = '';
 
+  selectedDep: string = '';
+  selectedDepId: string = '';
+  municipiosFiltrados: Municipio[] = [];
+
   departamentosImgs = [
     { nombre: 'Bogotá', img: 'assets/deps/bogota.png', depId: '11'},
     { nombre: 'Medellín', img: 'assets/deps/medellin.png', depId: '05', citId: '05001' },
@@ -63,6 +67,21 @@ export class DirectorioComponent implements OnInit {
         )
       }))
       .filter(dep => dep.municipios.length > 0);
+  }
+
+  getDepartamentos(): Departamento[] {
+    return this.departamentos;
+  }
+
+  onDepartamentoChange(depNombre: string): void {
+    const dep = this.departamentos.find(d => d.nombre === depNombre);
+    if (dep) {
+      this.selectedDepId = dep.codigo;
+      this.municipiosFiltrados = dep.municipios;
+    } else {
+      this.selectedDepId = '';
+      this.municipiosFiltrados = [];
+    }
   }
 
   onMunicipioSeleccionado(event: Event, depId: string): void {

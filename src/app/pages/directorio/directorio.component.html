@@ -5,19 +5,25 @@
     Encuentra la oficina de registro en Colombia más cercana
   </p>
 </div>
-
 <div class="buscadores">
-  <input
-    type="text"
-    placeholder="Buscar por departamento"
-    [(ngModel)]="searchDepartamento"
-  />
-  <input
-    type="text"
-    placeholder="Buscar por municipio"
-    [(ngModel)]="searchMunicipio"
-  />
+  <!-- Select de departamentos -->
+  <select #depSel [(ngModel)]="selectedDep" (change)="onDepartamentoChange(depSel.value)" class="buscador-select">
+    <option value="">Seleccionar departamento</option>
+    <option *ngFor="let dep of departamentos; trackBy: trackByDep" [value]="dep.nombre">
+      {{ dep.nombre }}
+    </option>
+  </select>
+
+  <!-- Select de municipios -->
+  <select (change)="onMunicipioSeleccionado($event, selectedDepId)" class="buscador-select">
+    <option value="">Seleccionar municipio</option>
+    <option *ngFor="let mun of municipiosFiltrados; trackBy: trackByMun" [value]="mun.codigo">
+      {{ mun.nombre }}
+    </option>
+  </select>
 </div>
+
+
 <div class="departaments_images_list">
   <div class="grid-container">
     <div

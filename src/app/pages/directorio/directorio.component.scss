@@ -14,26 +14,44 @@ h2 {
   text-align: center;
   font-size: medium;
 }
-
 .buscadores {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin: 20px 0;
-}
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  margin: 0 auto;
 
-.buscadores input {
-  padding: 10px 15px;
-  border: 1px solid #ccc;
-  border-radius: 25px;
-  outline: none;
-  width: 250px;
-  transition: all 0.3s ease;
-}
+  .buscador-select {
+    flex: 1;
+    min-width: 220px;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 14px;
+    background-color: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 
-.buscadores input:focus {
-  border-color: #02328C;
-  box-shadow: 0 0 5px rgba(2, 50, 140, 0.4);
+    &:focus {
+      border-color: #03238C;
+      box-shadow: 0 0 5px rgba(3, 35, 140, 0.5);
+    }
+  }
+
+  .buscador-select {
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%2303238C' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    padding-right: 36px;
+    min-width: 220px;
+    max-width: 300px;
+  }
 }
 
 .departament_list {
@@ -91,12 +109,12 @@ h2 {
   font-weight: bold;
 
   display: flex;
-  justify-content: center; /* centra horizontal */
-  align-items: center;     /* centra vertical */
+  justify-content: center;
+  align-items: center;
 }
 
 .card span {
-  position: relative; /* ya no absoluto */
+  position: relative;
   z-index: 2;
   text-shadow: 0 2px 4px rgba(0,0,0,0.6);
 }
