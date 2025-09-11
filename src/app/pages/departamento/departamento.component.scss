@@ -1,0 +1,129 @@
+h2 {
+  color: #02328C;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.head{
+  margin-bottom: 30px;
+  margin-top: 150px;
+}
+
+.head p{
+  text-align: center;
+  font-size: medium;
+}
+
+p {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.info{
+  width: 50%;
+}
+.acciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+
+  .volver {
+    background: none;
+    border: 1px solid #02328C;
+    color: #02328C;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background: #02328C;
+      color: #fff;
+    }
+  }
+
+  .buscador {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    overflow: hidden;
+
+    input {
+      border: none;
+      outline: none;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      flex: 1;
+    }
+
+    .search-btn {
+      background: #02328C;
+      border: none;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.departamento {
+  background: #02328C;
+  color: #fff;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  border-radius: 30px;
+  width: 20%;
+  margin: 0 auto 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.municipio {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+.oficina {
+  margin-bottom: 1rem;
+
+  .titulo {
+    font-weight: bold;
+    color: #02328C;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+  }
+
+  p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 2rem;
+
+    .icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

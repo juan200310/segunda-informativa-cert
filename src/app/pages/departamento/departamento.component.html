@@ -1,27 +1,75 @@
-<h1>Directorio de Oficinas de registro de instrumentos públicos en Colombia</h1>
-<p>Encuentra la oficina de registro en Colombia más cercana</p>
+<div class="head">
+  <h2>Directorio de Oficinas de registro de instrumentos públicos en Colombia</h2>
 
-<button routerLink="/directorio">⬅ Volver</button>
-
-<div *ngIf="departamentoSeleccionado">
-  <input
-    type="text"
-    placeholder="Filtrar por municipio"
-    [(ngModel)]="searchMunicipio"
-  />
+  <p>
+    Encuentra la oficina de registro en Colombia más cercana
+  </p>
 </div>
 
-<div *ngIf="departamentoSeleccionado; else noDepto">
-  <div *ngFor="let municipio of filteredMunicipios">
-    <div *ngFor="let oficina of municipio.informacion" class="oficina">
-      <p><strong>{{ oficina.nombre_oficina }}</strong></p>
-      <p><strong>Correo electrónico:</strong> {{ oficina.correo }}</p>
-      <p><strong>Teléfono:</strong> {{ oficina.telefono }}</p>
-      <p><strong>Dirección:</strong> {{ oficina.direccion }}</p>
-    </div>
-    <hr />
+<div class="acciones">
+  <button class="volver" routerLink="/directorio">⬅ Volver</button>
+
+  <div *ngIf="departamentoSeleccionado" class="buscador">
+    <input
+      type="text"
+      placeholder="Buscar por municipios"
+      [(ngModel)]="searchMunicipio"
+    />
   </div>
 </div>
+
+  <div *ngIf="departamentoSeleccionado; else noDepto">
+    <h2 class="departamento">{{ departamentoSeleccionado?.nombre }}</h2>
+
+    <div *ngFor="let municipio of filteredMunicipios" class="municipio">
+      <div *ngFor="let oficina of municipio.informacion" class="oficina">
+        <p class="titulo">{{ oficina.nombre_oficina }}</p>
+        <p>
+          <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#03238C" viewBox="0 0 24 24">
+              <path d="M20 4H4c-1.103 0-2 .897-2
+              2v12c0 1.103.897 2 2 2h16c1.103
+              0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0
+              2v.511l-8 5.333-8-5.333V6h16zM4
+              18V8.489l8 5.333 8-5.333V18H4z"/>
+            </svg>
+          </span>
+          <strong>Correo electrónico:</strong>
+          <a [href]="'mailto:' + oficina.correo">{{ oficina.correo }}</a>
+        </p>
+        <p>
+          <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#03238C" viewBox="0 0 24 24">
+              <path d="M20.487 17.14l-4.235-.605a1.003
+              1.003 0 00-.98.379l-2.507 3.259c-3.905-1.982-7.093-5.169-9.075-9.075l3.259-2.507a1.003
+              1.003 0 00.379-.98L6.86 3.513A1 1 0 006 2.75H3.25C2.56
+              2.75 2 3.31 2 4c0 10.493 8.507 19 19
+              19 .69 0 1.25-.56 1.25-1.25V18a1 1 0
+              00-.763-.86z"/>
+            </svg>
+          </span>
+          <strong>Teléfono:</strong>
+          <a [href]="'tel:' + oficina.telefono">{{ oficina.telefono }}</a>
+        </p>
+        <p>
+          <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#03238C" viewBox="0 0 24 24">
+              <path d="M12 2C8.14 2 5 5.14 5
+              9c0 5.25 7 13 7 13s7-7.75
+              7-13c0-3.86-3.14-7-7-7zm0
+              9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62
+              6.5 12 6.5s2.5 1.12 2.5
+              2.5S13.38 11.5 12 11.5z"/>
+            </svg>
+          </span>
+          <strong>Dirección:</strong> {{ oficina.direccion }}
+        </p>
+        <hr />
+      </div>
+
+    </div>
+  </div>
+
 
 <ng-template #noDepto>
   <p>No se encontró el departamento con el id proporcionado.</p>

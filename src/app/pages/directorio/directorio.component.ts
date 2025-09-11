@@ -36,7 +36,7 @@ export class DirectorioComponent implements OnInit {
   municipiosFiltrados: Municipio[] = [];
 
   departamentosImgs = [
-    { nombre: 'Bogotá', img: 'assets/deps/bogota.png', depId: '11'},
+    { nombre: 'Bogotá', img: 'assets/deps/bogota.png', depId: '11', citId: '11001'},
     { nombre: 'Medellín', img: 'assets/deps/medellin.png', depId: '05', citId: '05001' },
     { nombre: 'Bolívar', img: 'assets/deps/bolivar.png', depId: '13'},
     { nombre: 'Atlántico', img: 'assets/deps/atlantico.png', depId: '08'},
