@@ -1,86 +1,81 @@
 @import "./sass/abtracts/variables.scss";
 
 mat-toolbar {
-    background-color: $mainColorBlue;
-    height: 100px;
-    display: flex;
-    justify-content: center; /* Center the navigation items */
-    position: fixed;
-    top:0;
-    z-index: 2;
-    width: 100vw;
-    & a {
-        text-decoration: none;
-        color: white;
-        text-align: center;
-        flex: 1; /* Each link takes equal width */
-        padding: 20px; /* Add some padding to increase clickable area */
-        height: 100%;
-    }
+  background-color: $mainColorBlue;
+  height: 100px;
+  display: flex;
+  align-items: center; /* centra verticalmente */
+  justify-content: space-between; /* espacio entre título, menú y botón */
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100vw;
 
-    .spacer {
-        flex: 1 1 auto;
-    }
-}
-
-.active-link {
-    background-color: #004884;
-    color: white;
-  }
-
-/* Estilo para el título de la aplicación */
-.app-title {
-    flex: 1; /* Ocupa todo el espacio disponible */
-}
-
-/* Estilo para el botón hamburguesa */
-.menu-button {
-    display: none; /* Inicialmente oculto en pantallas grandes */
-}
-
-/* Estilo para la lista de enlaces de navegación */
-.nav-links {
+  .nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2rem; /* espacio uniforme entre elementos */
     flex-grow: 1;
-}
 
-/* Media Query para pantallas pequeñas (menos de 600px) */
-@media screen and (max-width: 600px) {
     a {
-        color: black !important;
-
+      text-decoration: none;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 6px;
+      transition: background 0.3s;
+      font-size: 16px;
+      font-weight: 500;
+      white-space: nowrap; /* evita saltos raros */
     }
 
-    /* Oculta la lista de enlaces de navegación */
-    .nav-links {
-        display: none;
-        flex-direction: column; /* Alinea verticalmente en dispositivos móviles */
-        position: absolute;
-        top: 64px; /* Ajusta según el tamaño de la barra de navegación */
-        left: 0;
-        background-color: #f9f9f9;
-        width: 100%;
-        padding: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        z-index: 1000; /* Asegura que esté sobre el contenido */
+    a:hover {
+      background-color: rgba(255, 255, 255, 0.15);
     }
 
-    /* Muestra el botón hamburguesa */
-    .menu-button {
-        display: block; /* Muestra el botón en dispositivos móviles */
+    .active-link {
+      background-color: #004884;
+      color: white;
     }
+  }
 
-    /* Clase para mostrar la lista de enlaces cuando el menú hamburguesa está activo */
-    .nav-links.open {
-        display: flex;
-    }
-}
-.main{
-    margin-top: 110px;
+  .menu-button {
+    display: none; /* solo en móviles */
+  }
 }
 
-.toolbar{
-  z-index: 10000;
+/* Móviles */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background: white;
+    padding: 1rem;
+    position: absolute;
+    top: 100px; /* justo debajo del toolbar */
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+    a {
+      color: $mainColorBlue;
+      width: 100%;
+      padding: 12px;
+      border-radius: 0;
+    }
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .menu-button {
+    display: block;
+    color: white;
+  }
+}
+
+.main {
+  margin-top: 110px;
 }
