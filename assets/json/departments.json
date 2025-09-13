@@ -1,0 +1,1672 @@
+{
+    "departamentos": [
+      {
+        "codigo": "05",
+        "nombre": "Antioquia",
+        "municipios": [
+          {
+            "codigo": "05001",
+            "nombre": "Medellín",
+            "informacion": [
+              {
+                "nombre_oficina": "Medellín norte",
+                "correo": "ofiregismedellinnorte@supernotariado.gov.co",
+                "telefono": "(4)5128063 (4)5107070",
+                "direccion": "carrera 47 no. 52-122 interior 201 centro comercial el paso"
+              },
+              {
+                "nombre_oficina": "Medellín sur",
+                "correo": "ofiregismedellinzonasur@supernotariado.gov.co",
+                "telefono": "(4) 3851000",
+                "direccion": "carrera 52 no. 42 - 75 centro administrativo la alpujarra - edificio jose felix de restrepo"
+              }
+            ]
+          },
+          {
+            "codigo": "05002",
+            "nombre": "Abejorral",
+            "informacion": [
+              {
+                "nombre_oficina": "Abejorral",
+                "correo": "ofiregisabejorral@supernotariado.gov.co",
+                "telefono": "(4) 8648448",
+                "direccion": "calle santuario no. 50 - 25 si-321"
+              }
+            ]
+          },
+          {
+            "codigo": "05030",
+            "nombre": "Andes",
+            "informacion": [
+              {
+                "nombre_oficina": "Andes",
+                "correo": "ofiregisandes@supernotariado.gov.co",
+                "telefono": "(4) 8414214",
+                "direccion": "carrera 50 no. 48 - 14"
+              }
+            ]
+          },
+          {
+            "codigo": "05034",
+            "nombre": "Amalfi",
+            "informacion": [
+              {
+                "nombre_oficina": "Amalfi",
+                "correo": "ofiregisamalfi@supernotariado.gov.co",
+                "telefono": "(4) 8300479",
+                "direccion": "calle 20 no. 21 - 58"
+              }
+            ]
+          },
+          {
+            "codigo": "05045",
+            "nombre": "Apartadó",
+            "informacion": [
+              {
+                "nombre_oficina": "Apartado",
+                "correo": "ofiregisapartado@supernotariado.gov.co",
+                "telefono": "(4 ) 8285411",
+                "direccion": "carrera 105a no. 94 - 05, barrio nuevo"
+              }
+            ]
+          },
+          {
+            "codigo": "05093",
+            "nombre": "Cañasgordas",
+            "informacion": [
+              {
+                "nombre_oficina": "Cañasgordas",
+                "correo": "ofiregiscanasgordas@supernotariado.gov.co",
+                "telefono": "(4)8564304",
+                "direccion": "carrera bolivar # 24- 289"
+              }
+            ]
+          },
+          {
+            "codigo": "05147",
+            "nombre": "Ciudad Bolívar",
+            "informacion": [
+              {
+                "nombre_oficina": "Ciudad Bolívar",
+                "correo": "ofiregisbolivar@supernotariado.gov.co",
+                "telefono": "(4) 8411416",
+                "direccion": "calle 51 no. 48 - 40, parque"
+              }
+            ]
+          },
+          {
+            "codigo": "05190",
+            "nombre": "Concepción",
+            "informacion": [
+              {
+                "nombre_oficina": "Concepción",
+                "correo": "ofiregisdabeiba@supernotariado.gov.co",
+                "telefono": "N/R",
+                "direccion": "carrera 4 # 5 - 73"
+              }
+            ]
+          },
+          {
+            "codigo": "05234",
+            "nombre": "Dabeiba",
+            "informacion": [
+              {
+                "nombre_oficina": "Dabeiba",
+                "correo": "ofiregiscanasgordas@supernotariado.gov.co",
+                "telefono": "(4) 8590172",
+                "direccion": "calle 11 no. 11 -58"
+              }
+            ]
+          },
+          {
+            "codigo": "05284",
+            "nombre": "Fredonia",
+            "informacion": [
+              {
+                "nombre_oficina": "Fredonia",
+                "correo": "ofiregisfredonia@supernotariado.gov.co",
+                "telefono": "(4) 8403127",
+                "direccion": "calle 51 no. 49 - 25"
+              }
+            ]
+          },
+          {
+            "codigo": "05308",
+            "nombre": "Girardota",
+            "informacion": [
+              {
+                "nombre_oficina": "Girardota",
+                "correo": "ofiregisgirardota@supernotariado.gov.co",
+                "telefono": "(4) 2895827 (4) 2895114",
+                "direccion": "carrera 14 no. 5 - 187"
+              }
+            ]
+          },
+          {
+            "codigo": "05370",
+            "nombre": "Jericó",
+            "informacion": [
+              {
+                "nombre_oficina": "Jericó",
+                "correo": "ofiregisjerico@supernotariado.gov.co",
+                "telefono": "(4) 8523491",
+                "direccion": "calle 51 no. 49 - 25"
+              }
+            ]
+          },
+          {
+            "codigo": "05372",
+            "nombre": "La Ceja",
+            "informacion": [
+              {
+                "nombre_oficina": "La ceja",
+                "correo": "ofiregislaceja@supernotariado.gov.co",
+                "telefono": "(4) 5531931",
+                "direccion": "carrera 22 no. 21 - 27"
+              }
+            ]
+          },
+          {
+            "codigo": "05615",
+            "nombre": "Rionegro",
+            "informacion": [
+              {
+                "nombre_oficina": "Rionegro",
+                "correo": "ofiregisrionegro@supernotariado.gov.co",
+                "telefono": "N/R",
+                "direccion": "calle 49 no. 48-63 local 9908 centro comercial la convención"
+              }
+            ]
+          },
+          {
+            "codigo": "05674",
+            "nombre": "Santa Fe de Antioquia",
+            "informacion": [
+              {
+                "nombre_oficina": "Santa Fé de Antioquia",
+                "correo": "ofiregisrionegro@supernotariado.gov.co",
+                "telefono": "N/R",
+                "direccion": "calle 49 no. 48-63 local 9908 centro comercial la convención"
+              }
+            ]
+          },
+          {
+            "codigo": "05697",
+            "nombre": "El Santuario",
+            "informacion": [
+              {
+                "nombre_oficina": "Santuario",
+                "correo": "ofiregissantuario@supernotariado.gov.co",
+                "telefono": "(6) 3687043",
+                "direccion": "calle 6 no. 4 - 15"
+              }
+            ]
+          },
+          {
+            "codigo": "05756",
+            "nombre": "Sonsón",
+            "informacion": [
+              {
+                "nombre_oficina": "Sonsón",
+                "correo": "ofiregissonson@supernotariado.gov.co",
+                "telefono": "(4) 8691460",
+                "direccion": "carrera 8 no. 8 - 73"
+              }
+            ]
+          },
+          {
+            "codigo": "05789",
+            "nombre": "Támesis",
+            "informacion": [
+              {
+                "nombre_oficina": "Támesis",
+                "correo": "ofiregistamesis@supernotariado.gov.co",
+                "telefono": "(4) 8494684 (4) 8494704",
+                "direccion": "calle 11 no. 9 - 46"
+              }
+            ]
+          },
+          {
+            "codigo": "05837",
+            "nombre": "Urrao",
+            "informacion": [
+              {
+                "nombre_oficina": "Urrao",
+                "correo": "ofiregisurrao@supernotariado.gov.co",
+                "telefono": "(4) 8502116 (4)8502503",
+                "direccion": "calle 29 con carrera 29 no. 29-04 y 29-10, esquina"
+              }
+            ]
+          },
+          {
+            "codigo": "05890",
+            "nombre": "Yarumal",
+            "informacion": [
+              {
+                "nombre_oficina": "Yarumal",
+                "correo": "ofiregisyarumal@supernotariado.gov.co",
+                "telefono": "(4)8871876 (4)8871844",
+                "direccion": "carrera 21 n? 18-38, bario centro"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "08",
+        "nombre": "Atlántico",
+        "municipios": [
+          {
+            "codigo": "08001",
+            "nombre": "Barranquilla",
+            "informacion": [
+              {
+                "nombre_oficina": "Barranquilla",
+                "correo": "ofiregisbarranquilla@supernotariado.gov.co",
+                "telefono": "(5) 3786674 (5) 3672900 ext 2418",
+                "direccion": "carrera 42 d1 no. 80 a - 136"
+              }
+            ]
+          },
+          {
+            "codigo": "08606",
+            "nombre": "Sabanalarga",
+            "informacion": [
+              {
+                "nombre_oficina": "Sabanalarga",
+                "correo": "ofiregissabanalarga@supernotariado.gov.co",
+                "telefono": "(5) 8780380 (5) 8782911 (5) 3786231",
+                "direccion": "calle 26 con carrera 27 esquina"
+              }
+            ]
+          },
+          {
+            "codigo": "08758",
+            "nombre": "Soledad",
+            "informacion": [
+              {
+                "nombre_oficina": "Soledad",
+                "correo": "ofiregissoledad@supernotariado.gov.co",
+                "telefono": "(5) 3930029",
+                "direccion": "autopista aeropuerto # 23 no. 135 centro comercial plaza de la arboleda - piso 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "11",
+        "nombre": "Bogotá, D.C.",
+        "municipios": [
+          {
+            "codigo": "11001",
+            "nombre": "Bogotá, D.C.",
+            "informacion": [
+              {
+                "nombre_oficina": "Bogotá zona norte",
+                "correo": "ofiregisbogotanorte@supernotariado.gov.co",
+                "telefono": "(1) 3450500",
+                "direccion": "calle 74 no. 13 - 40"
+              },
+              {
+                "nombre_oficina": "Bogotá zona centro",
+                "correo": "ofiregisbogotacentro@supernotariado.gov.co",
+                "telefono": "(1) 2860169",
+                "direccion": "calle 28 no. 13 - 49 int. 201"
+              },
+              {
+                "nombre_oficina": "Bogotá zona sur",
+                "correo": "ofiregisbogotasur@supernotariado.gov.co",
+                "telefono": "(1)2381982 (1) 2387791 (1) 2383780",
+                "direccion": "N/A"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "13",
+        "nombre": "Bolívar",
+        "municipios": [
+          {
+            "codigo": "13001",
+            "nombre": "Cartagena de Indias",
+            "informacion": [
+              {
+                "nombre_oficina": "Cartagena",
+                "correo": "ofiregiscartagena@supernotariado.gov.co",
+                "telefono": "(5) 6641323 (5) 6600859 (5) 6644514 (5) 6600857 (5) 6600048",
+                "direccion": "calle baloco no. 2 - 40, centro hist?rico"
+              }
+            ]
+          },
+          {
+            "codigo": "13244",
+            "nombre": "El Carmen de Bolívar",
+            "informacion": [
+              {
+                "nombre_oficina": "El carmen de Bolívar",
+                "correo": "ofiregiselcarmendebolivar@supernotariado.gov.co",
+                "telefono": "(5) 6860232",
+                "direccion": "calle 25 no. 47 - 48 barrio centro"
+              }
+            ]
+          },
+          {
+            "codigo": "13440",
+            "nombre": "Mompox",
+            "informacion": [
+              {
+                "nombre_oficina": "Mompox",
+                "correo": "ofiregismompos@supernotariado.gov.co",
+                "telefono": "(5) 6855805 (5) 6840661",
+                "direccion": "Dirección: calle 18 no. 2b - 13, callejón del colegio pinillos"
+              }
+            ]
+          },
+          {
+            "codigo": "13760",
+            "nombre": "Simití",
+            "informacion": [
+              {
+                "nombre_oficina": "Simití",
+                "correo": "ofiregissimiti@supernotariado.gov.co",
+                "telefono": "(5) 5699309 (5) 5699325",
+                "direccion": "calle la soledad no. 5 - 18 parque principal"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "15",
+        "nombre": "Boyacá",
+        "municipios": [
+          {
+            "codigo": "15001",
+            "nombre": "Tunja",
+            "informacion": [
+              {
+                "nombre_oficina": "Tunja",
+                "correo": "ofiregistunja@supernotariado.gov.co",
+                "telefono": "(8)7424496",
+                "direccion": "Carrera 11 no. 20 - 41"
+              }
+            ]
+          },
+          {
+            "codigo": "15172",
+            "nombre": "Chiquinquirá",
+            "informacion": [
+              {
+                "nombre_oficina": "Chiquinquirá",
+                "correo": "ofiregischiquinquira@supernotariado.gov.co",
+                "telefono": "(8) 726 2102",
+                "direccion": "carrera 9 no. 15 - 23, segundo piso"
+              }
+            ]
+          },
+          {
+            "codigo": "15238",
+            "nombre": "Duitama",
+            "informacion": [
+              {
+                "nombre_oficina": "Duitama",
+                "correo": "ofiregisduitama@supernotariado.gov.co",
+                "telefono": "(8)7654002",
+                "direccion": "carrera 19 no. 16 - 31"
+              }
+            ]
+          },
+          {
+            "codigo": "15455",
+            "nombre": "Miraflores",
+            "informacion": [
+              {
+                "nombre_oficina": "Miraflores",
+                "correo": "ofiregismiraflores@supernotariado.gov.co",
+                "telefono": "(8)7330275 (608)7331640",
+                "direccion": "carrera 8 no. 2 - 49"
+              }
+            ]
+          },
+          {
+            "codigo": "15600",
+            "nombre": "Ramiriquí",
+            "informacion": [
+              {
+                "nombre_oficina": "Ramiriquí",
+                "correo": "ofiregisramiriqui@supernotariado.gov.co",
+                "telefono": "(8) 7327529",
+                "direccion": "calle 6 no. 6a - 08"
+              }
+            ]
+          },
+          {
+            "codigo": "15759",
+            "nombre": "Sogamoso",
+            "informacion": [
+              {
+                "nombre_oficina": "Sogamoso",
+                "correo": "ofiregissogamoso@supernotariado.gov.co",
+                "telefono": "(608) 7751894",
+                "direccion": "calle 10 no. 11 - 39"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "17",
+        "nombre": "Caldas",
+        "municipios": [
+          {
+            "codigo": "17001",
+            "nombre": "Manizales",
+            "informacion": [
+              {
+                "nombre_oficina": "Manizales",
+                "correo": "ofiregismanizales@supernotariado.gov.co",
+                "telefono": "(6) 8720650 (6) 8720504",
+                "direccion": "calle 18 entre carreras 21 y 22 - edificio leonidas londoño"
+              }
+            ]
+          },
+          {
+            "codigo": "17013",
+            "nombre": "Aguadas",
+            "informacion": [
+              {
+                "nombre_oficina": "Aguadas",
+                "correo": "ofiregisaguadas@supernotariado.gov.co",
+                "telefono": "(6) 8514770",
+                "direccion": "carrera 6a. no. 5 - 11 / 13"
+              }
+            ]
+          },
+          {
+            "codigo": "17042",
+            "nombre": "Anserma",
+            "informacion": [
+              {
+                "nombre_oficina": "Anserma",
+                "correo": "ofiregisanserma@supernotariado.gov.co",
+                "telefono": "(6) 8532441",
+                "direccion": "carrera 4 no. 6 - 36 / 38"
+              }
+            ]
+          },
+          {
+            "codigo": "17388",
+            "nombre": "La Dorada",
+            "informacion": [
+              {
+                "nombre_oficina": "La Dorada",
+                "correo": "ofiregisladorada@supernotariado.gov.co",
+                "telefono": "(6) 8571359 (6)8572132",
+                "direccion": "carrera 11 no. 2 - 11"
+              }
+            ]
+          },
+          {
+            "codigo": "17433",
+            "nombre": "Manzanares",
+            "informacion": [
+              {
+                "nombre_oficina": "Manzanares",
+                "correo": "ofiregismanzanares@supernotariado.gov.co",
+                "telefono": "(6) 8550149",
+                "direccion": "carrera 5 no. 7 - 11, centro"
+              }
+            ]
+          },
+          {
+            "codigo": "17486",
+            "nombre": "Neira",
+            "informacion": [
+              {
+                "nombre_oficina": "Neira",
+                "correo": "ofiregisneira@supernotariado.gov.co",
+                "telefono": "(6) 8587092",
+                "direccion": "carrera 11 no. 10 - 13"
+              }
+            ]
+          },
+          {
+            "codigo": "17524",
+            "nombre": "Pácora",
+            "informacion": [
+              {
+                "nombre_oficina": "Pácora",
+                "correo": "ofiregispacora@supernotariado.gov.co",
+                "telefono": "(6) 8670982 (6)8670360",
+                "direccion": "calle 6 no. 4 - 34"
+              }
+            ]
+          },
+          {
+            "codigo": "17614",
+            "nombre": "Riosucio",
+            "informacion": [
+              {
+                "nombre_oficina": "Riosucio",
+                "correo": "ofiregisriosucio@supernotariado.gov.co",
+                "telefono": "(6) 8592181",
+                "direccion": "calle 11 no. 8 - 40"
+              }
+            ]
+          },
+          {
+            "codigo": "17662",
+            "nombre": "Salamina",
+            "informacion": [
+              {
+                "nombre_oficina": "Salamina",
+                "correo": "ofiregissalamina@supernotariado.gov.co",
+                "telefono": "(6) 8595694 (6)8596358",
+                "direccion": "calle 6 no. 6 - 29, sector centro"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "18",
+        "nombre": "Caquetá",
+        "municipios": [
+          {
+            "codigo": "18001",
+            "nombre": "Florencia",
+            "informacion": [
+              {
+                "nombre_oficina": "Florencia",
+                "correo": "ofiregisflorencia@supernotariado.gov.co",
+                "telefono": "(8) 4356298",
+                "direccion": "carrera 11 no. 19 - 10"
+              }
+            ]
+          },
+          {
+            "codigo": "18753",
+            "nombre": "San Vicente del Caguán",
+            "informacion": [
+              {
+                "nombre_oficina": "San Vicente del Caguán",
+                "correo": "ofiregissanvicentedelcaguan@supernotariado.gov.co",
+                "telefono": "(8) 4645416 (8) 4645415",
+                "direccion": "carrera 4 no. 3 - 41, barrio hernandez"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "19",
+        "nombre": "Cauca",
+        "municipios": [
+          {
+            "codigo": "19001",
+            "nombre": "Popayán",
+            "informacion": [
+              {
+                "nombre_oficina": "Popayán",
+                "correo": "ofiregispopayan@supernotariado.gov.co",
+                "telefono": "(2) 8241538 (2)8241132 (2)8241006",
+                "direccion": "calle 4 no. 9 - 13"
+              }
+            ]
+          },
+          {
+            "codigo": "19130",
+            "nombre": "Caloto",
+            "informacion": [
+              {
+                "nombre_oficina": "Caloto",
+                "correo": "ofiregiscaloto@supernotariado.gov.co",
+                "telefono": "(2) 8258416 (2) 8258481",
+                "direccion": "calle 11 no. 5 - 40, barrio la palma"
+              }
+            ]
+          },
+          {
+            "codigo": "19573",
+            "nombre": "Puerto Tejada",
+            "informacion": [
+              {
+                "nombre_oficina": "Puerto Tejada",
+                "correo": "ofiregispuertotejada@supernotariado.gov.co",
+                "telefono": "(2) 8282157",
+                "direccion": "calle 14 no. 19 - 20"
+              }
+            ]
+          },
+          {
+            "codigo": "19698",
+            "nombre": "Santander de Quilichao",
+            "informacion": [
+              {
+                "nombre_oficina": "Santander de quilichao",
+                "correo": "ofiregissantanderdequilichao@supernotariado.gov.co",
+                "telefono": "(2) 8292126 (2) 8298796 (2) 8297857 (2) 8293293",
+                "direccion": "carrera 11 no. 5 - 47"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "20",
+        "nombre": "Cesar",
+        "municipios": [
+          {
+            "codigo": "20001",
+            "nombre": "Valledupar",
+            "informacion": [
+              {
+                "nombre_oficina": "Valledupar",
+                "correo": "ofiregisvalledupar@supernotariado.gov.co",
+                "telefono": "(5) 5749256 (5) 5744159 (5) 5800964",
+                "direccion": "carrera 11-a no. 15 - 45"
+              }
+            ]
+          },
+          {
+            "codigo": "20011",
+            "nombre": "Aguachica",
+            "informacion": [
+              {
+                "nombre_oficina": "Aguachica",
+                "correo": "ofiregisaguachica@supernotariado.gov.co",
+                "telefono": "(5) 5655255",
+                "direccion": "calle 5 no. 21 - 59"
+              }
+            ]
+          },
+          {
+            "codigo": "20770",
+            "nombre": "San Martín",
+            "informacion": [
+              {
+                "nombre_oficina": "San MartÍn",
+                "correo": "ofiregissanmartin@supernotariado.gov.co",
+                "telefono": "6487910",
+                "direccion": "carrera 8 no. 6 - 313"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "23",
+        "nombre": "Córdoba",
+        "municipios": [
+          {
+            "codigo": "23001",
+            "nombre": "Montería",
+            "informacion": [
+              {
+                "nombre_oficina": "Montería",
+                "correo": "ofiregismonteria@supernotariado.gov.co",
+                "telefono": "(4) 7826780 (4) 7824179",
+                "direccion": "carrera 6 no. 62 b - 32 locales 2,3, 4, centro de negocios sexta avenida"
+              }
+            ]
+          },
+          {
+            "codigo": "23079",
+            "nombre": "Ayapel",
+            "informacion": [
+              {
+                "nombre_oficina": "Ayapel",
+                "correo": "ofiregisayapel@supernotariado.gov.co",
+                "telefono": "7724066",
+                "direccion": "calle 9 no.5 150 calle san jose"
+              }
+            ]
+          },
+          {
+            "codigo": "23162",
+            "nombre": "Chinú",
+            "informacion": [
+              {
+                "nombre_oficina": "Chinú",
+                "correo": "ofiregischinu@supernotariado.gov.co",
+                "telefono": "(4) 7751127",
+                "direccion": "carrera 7a no. 17 - 02, barrio centro"
+              }
+            ]
+          },
+          {
+            "codigo": "23417",
+            "nombre": "Lorica",
+            "informacion": [
+              {
+                "nombre_oficina": "Lorica",
+                "correo": "ofiregislorica@supernotariado.gov.co",
+                "telefono": "V(4) 7735175",
+                "direccion": "calle 1 no. 16 a - 22"
+              }
+            ]
+          },
+          {
+            "codigo": "23466",
+            "nombre": "Montelíbano",
+            "informacion": [
+              {
+                "nombre_oficina": "Montelibano",
+                "correo": "ofiregismontelibano@supernotariado.gov.co",
+                "telefono": "(4) 7724066",
+                "direccion": "calle 9 no. 2 - 22, calle san josé"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "25",
+        "nombre": "Cundinamarca",
+        "municipios": [
+          {
+            "codigo": "25175",
+            "nombre": "Chocontá",
+            "informacion": [
+              {
+                "nombre_oficina": "Chocontá",
+                "correo": "ofiregischoconta@supernotariado.gov.co",
+                "telefono": "(1) 8561222",
+                "direccion": "calle 6 # 5 - 26"
+              }
+            ]
+          },
+          {
+            "codigo": "25269",
+            "nombre": "Facatativá",
+            "informacion": [
+              {
+                "nombre_oficina": "Facatativa",
+                "correo": "ofiregisfacatativa@supernotariado.gov.co",
+                "telefono": "(1) 8425188",
+                "direccion": "carrera 2 no. 6 - 59, piso 2"
+              }
+            ]
+          },
+          {
+            "codigo": "25290",
+            "nombre": "Fusagasugá",
+            "informacion": [
+              {
+                "nombre_oficina": "Fusagasugá",
+                "correo": "ofiregisfusagasuga@supernotariado.gov.co",
+                "telefono": "(1) 8864147",
+                "direccion": "calle 18 b no. 19 - 31 b.piedragrande"
+              }
+            ]
+          },
+          {
+            "codigo": "25307",
+            "nombre": "Girardot",
+            "informacion": [
+              {
+                "nombre_oficina": "Girardot",
+                "correo": "ofiregisgirardot@supernotariado.gov.co",
+                "telefono": "(1) 8326293",
+                "direccion": "calle 18 no. 9 - 95"
+              }
+            ]
+          },
+          {
+            "codigo": "25377",
+            "nombre": "La Mesa",
+            "informacion": [
+              {
+                "nombre_oficina": "La mesa",
+                "correo": "ofiregislamesa@supernotariado.gov.co",
+                "telefono": "(1) 8971014",
+                "direccion": "carrera 21 a no. 8 - 96"
+              }
+            ]
+          },
+          {
+            "codigo": "25754",
+            "nombre": "Soacha",
+            "informacion": [
+              {
+                "nombre_oficina": "Soacha",
+                "correo": "ofiregissoacha@supernotariado.gov.co",
+                "telefono": "(1) 9053866- 9053867",
+                "direccion": "calle 14 no. 7 - 56"
+              }
+            ]
+          },
+          {
+            "codigo": "25843",
+            "nombre": "Ubaté",
+            "informacion": [
+              {
+                "nombre_oficina": "Ubaté",
+                "correo": "ofiregisubate@supernotariado.gov.co",
+                "telefono": "(1) 3558363",
+                "direccion": "calle 8 no. 8 - 22 / 24"
+              }
+            ]
+          },
+          {
+            "codigo": "25899",
+            "nombre": "Zipaquirá",
+            "informacion": [
+              {
+                "nombre_oficina": "Zipaquira",
+                "correo": "ofiregiszipaquira@supernotariado.gov.co",
+                "telefono": "(1) 8829220",
+                "direccion": "carrera 10 no. 1 a - 11/13"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "27",
+        "nombre": "Chocó",
+        "municipios": [
+          {
+            "codigo": "27001",
+            "nombre": "Quibdó",
+            "informacion": [
+              {
+                "nombre_oficina": "Quibdó",
+                "correo": "ofiregisquibdo@supernotariado.gov.co",
+                "telefono": "(4 ) 6711689 (4) 6713786 (4) 6718 028",
+                "direccion": "carrera 3a con calle 24 esquina - palacio de justicia"
+              }
+            ]
+          },
+          {
+            "codigo": "27361",
+            "nombre": "Istmina",
+            "informacion": [
+              {
+                "nombre_oficina": "Istmina",
+                "correo": "ofiregisitsmina@supernotariado.gov.co",
+                "telefono": "(4 ) 6702285",
+                "direccion": "carrera 5 a no. 25 - 18, barrio curbis meseta bajo"
+              }
+            ]
+          },
+          {
+            "codigo": "27495",
+            "nombre": "Nuquí",
+            "informacion": [
+              {
+                "nombre_oficina": "Nuquí",
+                "correo": "ofiregisnuqui@supernotariado.gov.co",
+                "telefono": "(4 ) 6836013 (4) 6836062",
+                "direccion": "barrio la unión, calle principal, avenida el aeropuerto"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "41",
+        "nombre": "Huila",
+        "municipios": [
+          {
+            "codigo": "41001",
+            "nombre": "Neiva",
+            "informacion": [
+              {
+                "nombre_oficina": "Neiva",
+                "correo": "ofiregisneiva@supernotariado.gov.co",
+                "telefono": "(8) 8711448 (8) 8710425 (8) 8713525 (8) 8711424",
+                "direccion": "calle 6 no. 3 - 65 / 66"
+              }
+            ]
+          },
+          {
+            "codigo": "41298",
+            "nombre": "Garzón",
+            "informacion": [
+              {
+                "nombre_oficina": "Garzón",
+                "correo": "ofiregisgarzon@supernotariado.gov.co",
+                "telefono": "(8) 8332215",
+                "direccion": "calle 5 no. 8 - 55 / 57"
+              }
+            ]
+          },
+          {
+            "codigo": "41542",
+            "nombre": "Pitalito",
+            "informacion": [
+              {
+                "nombre_oficina": "Pitalito",
+                "correo": "ofiregispitalito@supernotariado.gov.co",
+                "telefono": "(8) 8360628",
+                "direccion": "carrera 4a no. 13-64, palacio de justicia oficina 204"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "44",
+        "nombre": "La Guajira",
+        "municipios": [
+          {
+            "codigo": "44001",
+            "nombre": "Riohacha",
+            "informacion": [
+              {
+                "nombre_oficina": "Riohacha",
+                "correo": "ofiregisriohacha@supernotariado.gov.co",
+                "telefono": "(5)7273906 (5)7274549 (5)7276827 (5)7272077 (5)7282985 (8) 8711424",
+                "direccion": "calle 7 no. 11 - 140"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "47",
+        "nombre": "Magdalena",
+        "municipios": [
+          {
+            "codigo": "47001",
+            "nombre": "Santa Marta",
+            "informacion": [
+              {
+                "nombre_oficina": "Santa Marta",
+                "correo": "ofiregissantamarta@supernotariado.gov.co",
+                "telefono": "(5) 4211244",
+                "direccion": "avenida libertador # 29-67"
+              }
+            ]
+          },
+          {
+            "codigo": "47161",
+            "nombre": "Ciénaga",
+            "informacion": [
+              {
+                "nombre_oficina": "Ciénaga",
+                "correo": "ofiregiscienaga@supernotariado.gov.co",
+                "telefono": "(5) 4242690- 4103495",
+                "direccion": "calle 10 no. 15 - 36"
+              }
+            ]
+          },
+          {
+            "codigo": "47288",
+            "nombre": "Fundación",
+            "informacion": [
+              {
+                "nombre_oficina": "Fundación",
+                "correo": "ofiregis@supernotariado.gov.co",
+                "telefono": "(5) 4850192 (5) 4850455",
+                "direccion": "carrera 15 no. 7 - 34, al frente del almacén tierra santa"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "50",
+        "nombre": "Meta",
+        "municipios": [
+          {
+            "codigo": "50001",
+            "nombre": "Villavicencio",
+            "informacion": [
+              {
+                "nombre_oficina": "Villavicencio",
+                "correo": "ofiregisvillavicencio@supernotariado.gov.co",
+                "telefono": "(8) 6784431 6784432 6784433 6784434 6784435",
+                "direccion": "calle 39 no. 31 - 39 /45 /47 /57 59, centro"
+              }
+            ]
+          },
+          {
+            "codigo": "50568",
+            "nombre": "Puerto López",
+            "informacion": [
+              {
+                "nombre_oficina": "Puerto López",
+                "correo": "ofiregispuertolopez@supernotariado.gov.co",
+                "telefono": "(8) 6450626 (8) 6450012",
+                "direccion": "calle 8 no. 6 - 53, barrio gaitán"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "52",
+        "nombre": "Nariño",
+        "municipios": [
+          {
+            "codigo": "52001",
+            "nombre": "Pasto",
+            "informacion": [
+              {
+                "nombre_oficina": "Pasto",
+                "correo": "ofiregispasto@supernotariado.gov.co",
+                "telefono": "(2) 7207578 (2) 7207579 (2) 7207563",
+                "direccion": "calle 17 no 26 - 92"
+              }
+            ]
+          },
+          {
+            "codigo": "52356",
+            "nombre": "Ipiales",
+            "informacion": [
+              {
+                "nombre_oficina": "Ipiales",
+                "correo": "ofiregisipiales@supernotariado.gov.co",
+                "telefono": "(2) 7733385 (2) 7733034 (2)7734130",
+                "direccion": "carrera 4 no. 7 - 31 / 39"
+              }
+            ]
+          },
+          {
+            "codigo": "52835",
+            "nombre": "Tumaco",
+            "informacion": [
+              {
+                "nombre_oficina": "Tumaco",
+                "correo": "ofiregistumaco@supernotariado.gov.co",
+                "telefono": "(2) 7272526 (2) 7277616",
+                "direccion": "avenida los estudiantes-urbanizacion miramar"
+              }
+            ]
+          },
+          {
+            "codigo": "52838",
+            "nombre": "Túquerres",
+            "informacion": [
+              {
+                "nombre_oficina": "Túquerres",
+                "correo": "ofiregistuquerres@supernotariado.gov.co",
+                "telefono": "(2) 7280177 (2) 7282745 (2) 7280352",
+                "direccion": "calle 17 no. 13 - 18"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "54",
+        "nombre": "Norte de Santander",
+        "municipios": [
+          {
+            "codigo": "54001",
+            "nombre": "Cúcuta",
+            "informacion": [
+              {
+                "nombre_oficina": "Cúcuta",
+                "correo": "ofiregiscucuta@supernotariado.gov.co",
+                "telefono": "(7) 5715783",
+                "direccion": "avenida 0 no. 9 - 30, centro"
+              }
+            ]
+          },
+          {
+            "codigo": "54206",
+            "nombre": "Convención",
+            "informacion": [
+              {
+                "nombre_oficina": "Convención",
+                "correo": "ofiregisconvencion@supernotariado.gov.co",
+                "telefono": "(7) 5630288",
+                "direccion": "calle 5 no. 7 - 27 centro"
+              }
+            ]
+          },
+          {
+            "codigo": "54498",
+            "nombre": "Ocaña",
+            "informacion": [
+              {
+                "nombre_oficina": "Ocaña",
+                "correo": "ofiregisocana@supernotariado.gov.co",
+                "telefono": "(7) 5694488 (7) 5695761",
+                "direccion": "calle 12 no. 11 - 63, edificio castellanos"
+              }
+            ]
+          },
+          {
+            "codigo": "54518",
+            "nombre": "Pamplona",
+            "informacion": [
+              {
+                "nombre_oficina": "Pamplona",
+                "correo": "ofiregispamplona@supernotariado.gov.co",
+                "telefono": "(7)5685870 (7)5685927",
+                "direccion": "carrera 6 no. 7 - 78 / 80"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "63",
+        "nombre": "Quindío",
+        "municipios": [
+          {
+            "codigo": "63001",
+            "nombre": "Armenia",
+            "informacion": [
+              {
+                "nombre_oficina": "Armenia",
+                "correo": "ofiregisarmenia@supernotariado.gov.co",
+                "telefono": "(6) 7451405 (6) 7461118 (6) 7426352 (6) 7450576",
+                "direccion": "calle 3 a norte no. 16 - 34"
+              }
+            ]
+          },
+          {
+            "codigo": "63130",
+            "nombre": "Calarcá",
+            "informacion": [
+              {
+                "nombre_oficina": "Calarca",
+                "correo": "ofiregiscalarca@supernotariado.gov.co",
+                "telefono": "(6) 7436662",
+                "direccion": "carrera 26 no. 39 - 21 - local 201"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "66",
+        "nombre": "Risaralda",
+        "municipios": [
+          {
+            "codigo": "66001",
+            "nombre": "Pereira",
+            "informacion": [
+              {
+                "nombre_oficina": "Pereira",
+                "correo": "ofiregispereira@supernotariado.gov.co",
+                "telefono": "(6) 3143313 (6) 3361919",
+                "direccion": "avenida 30 de agosto no. 37 - 24"
+              }
+            ]
+          },
+          {
+            "codigo": "66170",
+            "nombre": "Dosquebradas",
+            "informacion": [
+              {
+                "nombre_oficina": "Dosquebradas",
+                "correo": "ofiregisdosquebradas@supernotariado.gov.co",
+                "telefono": "(6) 3302066",
+                "direccion": "calle 37 no. 16 - 39, barrio la badea"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "68",
+        "nombre": "Santander",
+        "municipios": [
+          {
+            "codigo": "68001",
+            "nombre": "Bucaramanga",
+            "informacion": [
+              {
+                "nombre_oficina": "Bucaramanga",
+                "correo": "ofiregisbucaramanga@supernotariado.gov.co",
+                "telefono": "(7) 6432488 (7)6434855",
+                "direccion": "carrera 29 no. 48 - 63, local 1, sector el prado"
+              }
+            ]
+          },
+          {
+            "codigo": "68276",
+            "nombre": "El Socorro",
+            "informacion": [
+              {
+                "nombre_oficina": "Socorro",
+                "correo": "ofiregissocorro@supernotariado.gov.co",
+                "telefono": "(7) 7274051",
+                "direccion": "carrera 16 no. 14 - 44"
+              }
+            ]
+          },
+          {
+            "codigo": "68307",
+            "nombre": "Floridablanca",
+            "informacion": [
+              {
+                "nombre_oficina": "Floridablanca",
+                "correo": "ofiregisfloridablanca@supernotariado.gov.co",
+                "telefono": "(7) 6481109 (7) 6480838",
+                "direccion": "calle 41 no. 20 - 54, sector caldas"
+              }
+            ]
+          },
+          {
+            "codigo": "68369",
+            "nombre": "Gámbita",
+            "informacion": [
+              {
+                "nombre_oficina": "Gámbita",
+                "correo": "ofiregisgambita@supernotariado.gov.co",
+                "telefono": "(7) 7235334",
+                "direccion": "calle 6 no. 4 - 23"
+              }
+            ]
+          },
+          {
+            "codigo": "68377",
+            "nombre": "Girón",
+            "informacion": [
+              {
+                "nombre_oficina": "Girón",
+                "correo": "ofiregisgiron@supernotariado.gov.co",
+                "telefono": "(7) 6537654",
+                "direccion": "carrera 27 a no. 28 - 72, plaza principal"
+              }
+            ]
+          },
+          {
+            "codigo": "68572",
+            "nombre": "Puerto Wilches",
+            "informacion": [
+              {
+                "nombre_oficina": "Puerto Wilches",
+                "correo": "ofiregispuertowilches@supernotariado.gov.co",
+                "telefono": "(7) 6590240",
+                "direccion": "carrera 4 no. 5 - 47"
+              }
+            ]
+          },
+          {
+            "codigo": "68820",
+            "nombre": "Vélez",
+            "informacion": [
+              {
+                "nombre_oficina": "Vélez",
+                "correo": "ofiregisvelez@supernotariado.gov.co",
+                "telefono": "(7) 7562002",
+                "direccion": "carrera 4 no. 1 - 22"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "70",
+        "nombre": "Sucre",
+        "municipios": [
+          {
+            "codigo": "70001",
+            "nombre": "Sincelejo",
+            "informacion": [
+              {
+                "nombre_oficina": "Sincelejo",
+                "correo": "ofiregissincelejo@supernotariado.gov.co",
+                "telefono": "(5) 2761823",
+                "direccion": "carrera 22 no. 21 - 85, edificio de los notarios"
+              }
+            ]
+          },
+          {
+            "codigo": "70204",
+            "nombre": "Corozal",
+            "informacion": [
+              {
+                "nombre_oficina": "Corozal",
+                "correo": "ofiregiscorozal@supernotariado.gov.co",
+                "telefono": "(5) 2816962",
+                "direccion": "calle 27 no. 28 - 25, frente al parque san jose"
+              }
+            ]
+          },
+          {
+            "codigo": "70418",
+            "nombre": "Majagual",
+            "informacion": [
+              {
+                "nombre_oficina": "Majagual",
+                "correo": "ofiregismajagual@supernotariado.gov.co",
+                "telefono": "(5) 2877112",
+                "direccion": "carrera 5 no. 4 - 31"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "73",
+        "nombre": "Tolima",
+        "municipios": [
+          {
+            "codigo": "73001",
+            "nombre": "Ibagué",
+            "informacion": [
+              {
+                "nombre_oficina": "Ibagué",
+                "correo": "ofiregisibague@supernotariado.gov.co",
+                "telefono": "(8) 2631565",
+                "direccion": "carrera 4 c no. 31 - 65, barrio la candelaria"
+              }
+            ]
+          },
+          {
+            "codigo": "73443",
+            "nombre": "Líbano",
+            "informacion": [
+              {
+                "nombre_oficina": "Líbano",
+                "correo": "ofiregislíbano@supernotariado.gov.co",
+                "telefono": "(8) 2562692",
+                "direccion": "carrera 9 no. 6 - 54, sector centro"
+              }
+            ]
+          },
+          {
+            "codigo": "73483",
+            "nombre": "Melgar",
+            "informacion": [
+              {
+                "nombre_oficina": "Melgar",
+                "correo": "ofiregismelgar@supernotariado.gov.co",
+                "telefono": "(8) 2452423",
+                "direccion": "carrera 23 no. 7 - 57, barrio sicomoro"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "76",
+        "nombre": "Valle del Cauca",
+        "municipios": [
+          {
+            "codigo": "76001",
+            "nombre": "Cali",
+            "informacion": [
+              {
+                "nombre_oficina": "Cali",
+                "correo": "ofiregiscali@supernotariado.gov.co",
+                "telefono": "(2) 6673627",
+                "direccion": "carrera 44 no. 12 a - 100"
+              }
+            ]
+          },
+          {
+            "codigo": "76100",
+            "nombre": "Buga",
+            "informacion": [
+              {
+                "nombre_oficina": "Buga",
+                "correo": "ofiregisbuga@supernotariado.gov.co",
+                "telefono": "(2) 2371900",
+                "direccion": "carrera 11 no. 6 - 81, piso 1"
+              }
+            ]
+          },
+          {
+            "codigo": "76111",
+            "nombre": "Caicedonia",
+            "informacion": [
+              {
+                "nombre_oficina": "Caicedonia",
+                "correo": "ofiregiscaicedonia@supernotariado.gov.co",
+                "telefono": "(2) 2450371",
+                "direccion": "calle 9 no. 17 - 50"
+              }
+            ]
+          },
+          {
+            "codigo": "76233",
+            "nombre": "El Cerrito",
+            "informacion": [
+              {
+                "nombre_oficina": "El cerrito",
+                "correo": "ofiregiselcerrito@supernotariado.gov.co",
+                "telefono": "(2) 2552427",
+                "direccion": "carrera 11 no. 7 - 45, centro"
+              }
+            ]
+          },
+          {
+            "codigo": "76520",
+            "nombre": "Palmira",
+            "informacion": [
+              {
+                "nombre_oficina": "Palmira",
+                "correo": "ofiregispalmira@supernotariado.gov.co",
+                "telefono": "(2) 2736363",
+                "direccion": "carrera 27 a no. 29 - 49"
+              }
+            ]
+          },
+          {
+            "codigo": "76834",
+            "nombre": "Tuluá",
+            "informacion": [
+              {
+                "nombre_oficina": "Tuluá",
+                "correo": "ofiregistulua@supernotariado.gov.co",
+                "telefono": "(2) 2261625 (2) 2261626",
+                "direccion": "carrera 26 no. 25 - 08"
+              }
+            ]
+          },
+          {
+            "codigo": "76892",
+            "nombre": "Zarzal",
+            "informacion": [
+              {
+                "nombre_oficina": "Zarzal",
+                "correo": "ofiregiszarzal@supernotariado.gov.co",
+                "telefono": "(2) 2200230",
+                "direccion": "calle 11 no. 26 - 49"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "81",
+        "nombre": "Arauca",
+        "municipios": [
+          {
+            "codigo": "81001",
+            "nombre": "Arauca",
+            "informacion": [
+              {
+                "nombre_oficina": "Arauca",
+                "correo": "ofiregisarauca@supernotariado.gov.co",
+                "telefono": "(7) 8852377 (7) 8854089",
+                "direccion": "carrera 22 no. 19 - 41"
+              }
+            ]
+          },
+          {
+            "codigo": "81300",
+            "nombre": "Fortul",
+            "informacion": [
+              {
+                "nombre_oficina": "Fortul",
+                "correo": "ofiregisfortul@supernotariado.gov.co",
+                "telefono": "(7) 8887010",
+                "direccion": "calle 11 no. 16 - 29"
+              }
+            ]
+          },
+          {
+            "codigo": "81736",
+            "nombre": "Saravena",
+            "informacion": [
+              {
+                "nombre_oficina": "Saravena",
+                "correo": "ofiregissaravena@supernotariado.gov.co",
+                "telefono": "(7) 8891461",
+                "direccion": "calle 26 no. 16 - 20"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "85",
+        "nombre": "Casanare",
+        "municipios": [
+          {
+            "codigo": "85001",
+            "nombre": "Yopal",
+            "informacion": [
+              {
+                "nombre_oficina": "Yopal",
+                "correo": "ofiregisyopal@supernotariado.gov.co",
+                "telefono": "(8) 6331904 (8) 6332152",
+                "direccion": "carrera 29 no. 31 - 10"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "86",
+        "nombre": "Putumayo",
+        "municipios": [
+          {
+            "codigo": "86001",
+            "nombre": "Mocoa",
+            "informacion": [
+              {
+                "nombre_oficina": "Mocoa",
+                "correo": "ofiregismocoa@supernotariado.gov.co",
+                "telefono": "(8) 4200679",
+                "direccion": "carrera 9 no. 13 - 11"
+              }
+            ]
+          },
+          {
+            "codigo": "86568",
+            "nombre": "Puerto Asís",
+            "informacion": [
+              {
+                "nombre_oficina": "Puerto Asís",
+                "correo": "ofiregispuertoasis@supernotariado.gov.co",
+                "telefono": "(8) 4227092 (8) 4227715",
+                "direccion": "carrera 23 no. 12 - 31"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "88",
+        "nombre": "San Andrés, Providencia y Santa Catalina",
+        "municipios": [
+          {
+            "codigo": "88001",
+            "nombre": "San Andrés",
+            "informacion": [
+              {
+                "nombre_oficina": "San Andrés",
+                "correo": "ofiregissanandres@supernotariado.gov.co",
+                "telefono": "(8) 5123048",
+                "direccion": "carrera 19 a no. 6 - 80"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "91",
+        "nombre": "Amazonas",
+        "municipios": [
+          {
+            "codigo": "91001",
+            "nombre": "Leticia",
+            "informacion": [
+              {
+                "nombre_oficina": "Leticia",
+                "correo": "ofiregisleticia@supernotariado.gov.co",
+                "telefono": "(8) 5922377 (8) 5925345",
+                "direccion": "carrera 10 no. 7 - 13"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "94",
+        "nombre": "Guainía",
+        "municipios": [
+          {
+            "codigo": "94001",
+            "nombre": "Inírida",
+            "informacion": [
+              {
+                "nombre_oficina": "Inírida",
+                "correo": "ofiregisinirida@supernotariado.gov.co",
+                "telefono": "(8) 5656372",
+                "direccion": "carrera 16 no. 10 - 24"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "95",
+        "nombre": "Guaviare",
+        "municipios": [
+          {
+            "codigo": "95001",
+            "nombre": "San José del Guaviare",
+            "informacion": [
+              {
+                "nombre_oficina": "San José del Guaviare",
+                "correo": "ofiregissanjosedelguaviare@supernotariado.gov.co",
+                "telefono": "(8) 5840211 (8) 5840522",
+                "direccion": "calle 11 no. 20 - 105, barrio la esperanza"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "97",
+        "nombre": "Vaupés",
+        "municipios": [
+          {
+            "codigo": "97001",
+            "nombre": "Mitú",
+            "informacion": [
+              {
+                "nombre_oficina": "Mitú",
+                "correo": "ofiregismitu@supernotariado.gov.co",
+                "telefono": "(8) 5642597",
+                "direccion": "carrera 13 trasversal 13-16, barrio villa alix"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "codigo": "99",
+        "nombre": "Vichada",
+        "municipios": [
+          {
+            "codigo": "99001",
+            "nombre": "Puerto Carreño",
+            "informacion": [
+              {
+                "nombre_oficina": "Puerto Carreño",
+                "correo": "ofiregispuertocarreno@supernotariado.gov.co",
+                "telefono": "(8) 5656372",
+                "direccion": "carrera 12 no. 17 - 52"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
