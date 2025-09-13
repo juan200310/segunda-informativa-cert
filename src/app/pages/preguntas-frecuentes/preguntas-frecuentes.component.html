@@ -1,45 +1,13 @@
 <div class="faq-container">
-  <h2 class="faq-title">Preguntas frecuentes</h2>
+  <strong><h1 class="faq-title">Preguntas frecuentes</h1></strong>
 
   <div class="faq-image">
     <img src="assets/faq.png" alt="Preguntas frecuentes" />
   </div>
 
-  <!-- Bloque 1 -->
-  <div class="faq-list">
-    <div class="faq-item" *ngFor="let faq of faqs" (click)="toggleFaq(faq)">
-      <div class="faq-header">
-        <p>{{ faq.title }}</p>
-        <span class="icon">{{ faq.open ? '-' : '+' }}</span>
-      </div>
-      <div class="faq-answer" *ngIf="faq.open">
-        <p>{{ faq.content }}</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Bloque 2 -->
-  <div class="faq-section">
-    <div class="faq-image-side">
-      <img src="assets/faq2.png" alt="Preguntas frecuentes" />
-    </div>
-    <div class="faq-list-side">
-      <div class="faq-item" *ngFor="let faq of faqs2" (click)="toggleFaq(faq)">
-        <div class="faq-header">
-          <p>{{ faq.title }}</p>
-          <span class="icon">{{ faq.open ? '-' : '+' }}</span>
-        </div>
-        <div class="faq-answer" *ngIf="faq.open">
-          <p>{{ faq.content }}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Bloque 3 -->
-  <div class="faq-section-blue">
+  <div class="faq1">
     <div class="faq-list">
-      <div class="faq-item" *ngFor="let faq of faqs3" (click)="toggleFaq(faq)">
+      <div class="faq-item" *ngFor="let faq of faqs" (click)="toggleFaq(faq)">
         <div class="faq-header">
           <p>{{ faq.title }}</p>
           <span class="icon">{{ faq.open ? '-' : '+' }}</span>
@@ -51,7 +19,41 @@
     </div>
   </div>
 
-  <div class="faq-image">
-    <img src="assets/faq3.png" alt="Preguntas frecuentes" />
+  <div class="faq2">
+    <div class="faq-section">
+      <div class="faq-image-side">
+        <img src="assets/faq2.png" alt="Preguntas frecuentes" />
+      </div>
+      <div class="faq-list-side">
+        <div class="faq-item" *ngFor="let faq of faqs2" (click)="toggleFaq(faq)">
+          <div class="faq-header">
+            <p>{{ faq.title }}</p>
+            <span class="icon">{{ faq.open ? '-' : '+' }}</span>
+          </div>
+          <div class="faq-answer" *ngIf="faq.open">
+            <p>{{ faq.content }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="faq3">
+    <div class="faq-section-blue">
+      <div class="faq-list">
+        <div class="faq-item" *ngFor="let faq of faqs3" (click)="toggleFaq(faq)">
+          <div class="faq-header">
+            <p>{{ faq.title }}</p>
+            <span class="icon">{{ faq.open ? '-' : '+' }}</span>
+          </div>
+          <div class="faq-answer" *ngIf="faq.open">
+            <p>{{ faq.content }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-image">
+      <img src="assets/faq3.png" alt="Preguntas frecuentes" />
+    </div>
   </div>
 </div>
