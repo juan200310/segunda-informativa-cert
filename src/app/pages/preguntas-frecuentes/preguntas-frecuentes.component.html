@@ -10,7 +10,7 @@
       <div class="faq-item" *ngFor="let faq of faqs" (click)="toggleFaq(faq)">
         <div class="faq-header">
           <p>{{ faq.title }}</p>
-          <span class="icon">{{ faq.open ? '-' : '+' }}</span>
+            <span><img src="assets/plus.png" alt="Abrir pregunta" /></span>
         </div>
         <div class="faq-answer" *ngIf="faq.open">
           <p>{{ faq.content }}</p>
@@ -28,7 +28,7 @@
         <div class="faq-item" *ngFor="let faq of faqs2" (click)="toggleFaq(faq)">
           <div class="faq-header">
             <p>{{ faq.title }}</p>
-            <span class="icon">{{ faq.open ? '-' : '+' }}</span>
+            <span><img src="assets/plus.png" alt="Abrir pregunta" /></span>
           </div>
           <div class="faq-answer" *ngIf="faq.open">
             <p>{{ faq.content }}</p>
@@ -37,13 +37,15 @@
       </div>
     </div>
   </div>
+
   <div class="faq3">
     <div class="faq-section-blue">
       <div class="faq-list">
         <div class="faq-item" *ngFor="let faq of faqs3" (click)="toggleFaq(faq)">
           <div class="faq-header">
             <p>{{ faq.title }}</p>
-            <span class="icon">{{ faq.open ? '-' : '+' }}</span>
+            <span><img src="assets/plus.png" alt="Abrir pregunta"/></span>
+
           </div>
           <div class="faq-answer" *ngIf="faq.open">
             <p>{{ faq.content }}</p>
