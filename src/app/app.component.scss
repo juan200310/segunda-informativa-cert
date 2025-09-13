@@ -1,5 +1,21 @@
 @import "./sass/abtracts/variables.scss";
 
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.content {
+  flex: 1;
+}
+
 mat-toolbar {
   background-color: $mainColorBlue;
   height: 100px;

@@ -29,7 +29,9 @@
   </div>
 </mat-toolbar>
 
-<div class="main" (click)="closeMenu()">
-  <router-outlet></router-outlet>
+<div class="layout">
+  <div class="content" (click)="closeMenu()">
+    <router-outlet></router-outlet>
+  </div>
   <app-footer></app-footer>
 </div>
