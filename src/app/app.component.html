@@ -1,24 +1,35 @@
 <mat-toolbar color="primary" class="toolbar">
   <!-- Botón hamburguesa -->
-  <button mat-icon-button class="menu-button" aria-label="Toggle menu" (click)="toggleMenu(active)">
-    <mat-icon>menu</mat-icon>
+  <button mat-icon-button class="menu-button" aria-label="Toggle menu" (click)="toggleMenu()">
+    <mat-icon>{{ isMenuOpen ? 'close' : 'menu' }}</mat-icon>
   </button>
 
   <!-- Links -->
   <div class="nav-links" [class.open]="isMenuOpen">
-    <a [ngClass]="{'active-link': active === 'inicio'}" mat-button (click)="toggleMenu('inicio')" routerLink="/inicio">Inicio</a>
+    <a [ngClass]="{'active-link': active === 'inicio'}"
+       mat-button (click)="toggleMenu('inicio')" routerLink="/inicio">Inicio</a>
+
     <a [ngClass]="{'active-link': active === 'comprar-certificado'}"
-       mat-button
-       (click)="toggleMenu('comprar-certificado'); navigateToFragment('comprar-certiticado')">
-      Comprar certificado de tradición y libertad
+       mat-button (click)="toggleMenu('comprar-certificado'); navigateToFragment('comprar-certiticado')">
+      Comprar certificado
     </a>
-    <a [ngClass]="{'active-link': active === 'blog'}" mat-button (click)="toggleMenu('blog')" routerLink="/blog">Blog</a>
-    <a [ngClass]="{'active-link': active === 'preguntas-frecuentes'}" mat-button (click)="toggleMenu('preguntas-frecuentes')" routerLink="/preguntas-frecuentes">Preguntas frecuentes</a>
-    <a [ngClass]="{'active-link': active === 'directorio'}" mat-button (click)="toggleMenu('directorio')" routerLink="/directorio">Directorio de oficinas de registro</a>
+
+    <a [ngClass]="{'active-link': active === 'blog'}"
+       mat-button (click)="toggleMenu('blog')" routerLink="/blog">Blog</a>
+
+    <a [ngClass]="{'active-link': active === 'preguntas-frecuentes'}"
+       mat-button (click)="toggleMenu('preguntas-frecuentes')" routerLink="/preguntas-frecuentes">
+      Preguntas frecuentes
+    </a>
+
+    <a [ngClass]="{'active-link': active === 'directorio'}"
+       mat-button (click)="toggleMenu('directorio')" routerLink="/directorio">
+      Directorio
+    </a>
   </div>
 </mat-toolbar>
 
-<div class="main" (click)="toggleMenuActive(active)">
+<div class="main" (click)="closeMenu()">
   <router-outlet></router-outlet>
   <app-footer></app-footer>
 </div>
