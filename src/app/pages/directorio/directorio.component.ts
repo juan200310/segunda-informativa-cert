@@ -21,6 +21,13 @@ interface Departamento {
   municipios: Municipio[];
 }
 
+interface DepartamentoImg {
+  nombre: string;
+  img: string;
+  depId: string;
+  citId?: string;
+}
+
 @Component({
   selector: 'app-directorio',
   templateUrl: './directorio.component.html',
@@ -35,16 +42,22 @@ export class DirectorioComponent implements OnInit {
   selectedDepId: string = '';
   municipiosFiltrados: Municipio[] = [];
 
-  departamentosImgs = [
+  departamentosImgs: DepartamentoImg[] = [
     { nombre: 'Bogotá', img: 'assets/deps/bogota.png', depId: '11', citId: '11001'},
     { nombre: 'Medellín', img: 'assets/deps/medellin.png', depId: '05', citId: '05001' },
-    { nombre: 'Bolívar', img: 'assets/deps/bolivar.png', depId: '13'},
-    { nombre: 'Atlántico', img: 'assets/deps/atlantico.png', depId: '08'},
+    { nombre: 'Bolívar', img: 'assets/deps/bolivar.png', depId: '13' },
+    { nombre: 'Atlántico', img: 'assets/deps/atlantico.png', depId: '08' },
     { nombre: 'Cundinamarca', img: 'assets/deps/cundinamarca.png', depId: '25' },
-    { nombre: 'Santander', img: 'assets/deps/santander.png', depId: '68'},
-    { nombre: 'Valle del Cauca', img: 'assets/deps/valle.png', depId: '76'},
-    { nombre: 'Nariño', img: 'assets/deps/narino.png', depId: '52'}
+    { nombre: 'Santander', img: 'assets/deps/santander.png', depId: '68' },
+    { nombre: 'Valle del Cauca', img: 'assets/deps/valle.png', depId: '76' },
+    { nombre: 'Nariño', img: 'assets/deps/narino.png', depId: '52' }
   ];
+
+  municipiosImgs = [
+    { nombre: 'Bogotá', img: 'assets/deps/bogota.png', depId: '11', citId: '11001' },
+    { nombre: 'Medellín', img: 'assets/deps/medellin.png', depId: '05', citId: '05001' }
+  ];
+
   constructor(private http: HttpClient, private router: Router) {}
 
   ngOnInit(): void {
@@ -56,6 +69,10 @@ export class DirectorioComponent implements OnInit {
   }
 
   get filteredDepartamentos(): Departamento[] {
+    if (this.selectedDep) {
+      return this.departamentos.filter(dep => dep.nombre === this.selectedDep);
+    }
+
     return this.departamentos
       .filter(dep =>
         dep.nombre.toLowerCase().includes(this.searchDepartamento.toLowerCase())
@@ -69,16 +86,39 @@ export class DirectorioComponent implements OnInit {
       .filter(dep => dep.municipios.length > 0);
   }
 
+  get filteredDepartamentosImgs() {
+    if (this.selectedDep) {
+      return this.departamentosImgs.filter(dep => dep.nombre === this.selectedDep);
+    }
+    return this.departamentosImgs;
+  }
+
   getDepartamentos(): Departamento[] {
     return this.departamentos;
+  }
+
+  get destacadosImgs() {
+    if (this.selectedDep) {
+      const dep = this.departamentos.find(d => d.nombre === this.selectedDep);
+      if (!dep) return [];
+
+      return [
+        ...this.departamentosImgs.filter(d => d.nombre === dep.nombre),
+        ...this.municipiosImgs.filter(m => m.depId === dep.codigo)
+      ];
+    }
+
+    return [...this.departamentosImgs, ...this.municipiosImgs];
   }
 
   onDepartamentoChange(depNombre: string): void {
     const dep = this.departamentos.find(d => d.nombre === depNombre);
     if (dep) {
+      this.selectedDep = dep.nombre;
       this.selectedDepId = dep.codigo;
       this.municipiosFiltrados = dep.municipios;
     } else {
+      this.selectedDep = '';
       this.selectedDepId = '';
       this.municipiosFiltrados = [];
     }
