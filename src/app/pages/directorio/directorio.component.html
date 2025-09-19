@@ -36,17 +36,14 @@
         filteredCard: applyFiltered
       }"
       [style.backgroundImage]="'url(' + dep.img + ')'"
+      (click)="goToDepartment(dep.depId, dep.citId)"
     >
       <span>{{ dep.nombre }}</span>
-      <a
-        [routerLink]="['/departamento']"
-        [queryParams]="{ depId: dep.depId, citId: dep.citId || '' }"
-      >
-        <button class="plus">+</button>
-      </a>
+      <button class="plus">+</button>
     </div>
   </div>
 </div>
+
 
 <div class="departament_list">
   <h2>Conoce el listado aquí</h2>

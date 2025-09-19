@@ -139,6 +139,12 @@ export class DirectorioComponent implements OnInit {
     }
   }
 
+  goToDepartment(depId: string, citId?: string) {
+    this.router.navigate(['/departamento'], {
+      queryParams: { depId, citId: citId || '' }
+    });
+  }
+
   trackByDep(index: number, item: Departamento) {
     return item.codigo;
   }
