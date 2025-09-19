@@ -24,11 +24,17 @@
 </div>
 
 <div class="departaments_images_list">
-  <div class="grid-container">
+  <div
+    class="grid-container"
+    [ngClass]="{ filtered: applyFiltered }"
+  >
     <div
       class="card"
       *ngFor="let dep of destacadosImgs; let i = index"
-      [ngClass]="{ big: i === 0 }"
+      [ngClass]="{
+        big: i === 0,
+        filteredCard: applyFiltered
+      }"
       [style.backgroundImage]="'url(' + dep.img + ')'"
     >
       <span>{{ dep.nombre }}</span>
@@ -45,7 +51,7 @@
 <div class="departament_list">
   <h2>Conoce el listado aquí</h2>
 
-  <div class="grid-selects">
+  <div class="grid-selects" [ngClass]="{ filtered: applyFiltered }">
     <div *ngFor="let departamento of filteredDepartamentos; trackBy: trackByDep">
       <select (change)="onMunicipioSeleccionado($event, departamento.codigo)">
         <option value="" disabled selected>{{ departamento.nombre }}</option>

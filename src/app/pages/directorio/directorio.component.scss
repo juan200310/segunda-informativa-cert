@@ -157,3 +157,49 @@ h2 {
   margin-bottom: 50px;
   margin-top: 50px;
 }
+
+.filtered {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.grid-selects.filtered {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.grid-selects.filtered select {
+  width: 500px;
+  padding: 8px 12px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.grid-container.filtered {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  justify-content: center;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.card.filteredCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  box-sizing: border-box;
+}

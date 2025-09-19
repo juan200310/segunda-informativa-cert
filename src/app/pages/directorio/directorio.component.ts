@@ -42,9 +42,9 @@ export class DirectorioComponent implements OnInit {
   selectedDepId: string = '';
   municipiosFiltrados: Municipio[] = [];
 
+  applyFiltered: boolean = false;
+
   departamentosImgs: DepartamentoImg[] = [
-    { nombre: 'Bogotá', img: 'assets/deps/bogota.png', depId: '11', citId: '11001'},
-    { nombre: 'Medellín', img: 'assets/deps/medellin.png', depId: '05', citId: '05001' },
     { nombre: 'Bolívar', img: 'assets/deps/bolivar.png', depId: '13' },
     { nombre: 'Atlántico', img: 'assets/deps/atlantico.png', depId: '08' },
     { nombre: 'Cundinamarca', img: 'assets/deps/cundinamarca.png', depId: '25' },
@@ -108,7 +108,7 @@ export class DirectorioComponent implements OnInit {
       ];
     }
 
-    return [...this.departamentosImgs, ...this.municipiosImgs];
+    return [...this.municipiosImgs, ...this.departamentosImgs];
   }
 
   onDepartamentoChange(depNombre: string): void {
@@ -117,10 +117,14 @@ export class DirectorioComponent implements OnInit {
       this.selectedDep = dep.nombre;
       this.selectedDepId = dep.codigo;
       this.municipiosFiltrados = dep.municipios;
+
+      this.applyFiltered = true;
     } else {
       this.selectedDep = '';
       this.selectedDepId = '';
       this.municipiosFiltrados = [];
+
+      this.applyFiltered = false;
     }
   }
 
