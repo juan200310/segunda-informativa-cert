@@ -204,3 +204,30 @@ h2 {
   height: 100%;
   box-sizing: border-box;
 }
+
+.select-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 10px 40px 10px 15px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+
+  background: white url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M30 20 L70 50 L30 80' stroke='%2302328C' stroke-width='8' fill='none' /></svg>") no-repeat right 15px center;
+  background-size: 16px;
+}
+
+.select-card:hover {
+  border-color: #02328C;
+  box-shadow: 0 0 5px rgba(2, 50, 140, 0.4);
+  background-color: #f5faff;
+}
+
+

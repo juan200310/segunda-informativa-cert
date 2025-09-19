@@ -49,14 +49,14 @@
   <h2>Conoce el listado aquí</h2>
 
   <div class="grid-selects" [ngClass]="{ filtered: applyFiltered }">
-    <div *ngFor="let departamento of filteredDepartamentos; trackBy: trackByDep">
-      <select (change)="onMunicipioSeleccionado($event, departamento.codigo)">
-        <option value="" disabled selected>{{ departamento.nombre }}</option>
-        <option *ngFor="let municipio of departamento.municipios; trackBy: trackByMun"
-                [value]="municipio.codigo">
-          {{ municipio.nombre }}
-        </option>
-      </select>
+    <div
+      *ngFor="let departamento of filteredDepartamentos; trackBy: trackByDep"
+      class="select-card"
+      (click)="goToDepartment(departamento.codigo)"
+    >
+      {{ departamento.nombre }}
     </div>
   </div>
 </div>
+
+
