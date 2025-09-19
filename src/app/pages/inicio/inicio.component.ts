@@ -12,50 +12,50 @@ export class InicioComponent implements OnInit{
   document: string = '';
   responsiveOptions: any[] | undefined;
   products: any[]=[
-    
+
   ];
   blogPosts:any[] = [
     {
       title: 'Recomendaciones a la hora de comprar vivienda en Colombia',
       date: '6/04/2023',
-      imageUrl: '../../../assets/business-woman-holding-seal-documents.jpg',
+      imageUrl: 'assets/business-woman-holding-seal-documents.jpg',
       url:'none'
     },
     {
       title: 'Certificado de Tradición y Libertad: Para qué sirve',
       date: '9/12/2023',
-      imageUrl: '../../../assets/business-woman-holding-seal-documents.jpg',
+      imageUrl: 'assets/business-woman-holding-seal-documents.jpg',
       url:'none'
     },
     {
       title: 'Cómo comprender la información del Certificado Tradición y Libertad',
       date: '28/12/2023',
-      imageUrl: '../../../assets/business-woman-holding-seal-documents.jpg',
+      imageUrl: 'assets/business-woman-holding-seal-documents.jpg',
       url:'none'
     },
     {
       title: 'Recomendaciones a la hora de comprar vivienda en Colombia',
       date: '6/04/2023',
-      imageUrl: '../../../assets/business-woman-holding-seal-documents.jpg',
+      imageUrl: 'assets/business-woman-holding-seal-documents.jpg',
       url:'none'
     },
     {
       title: 'Certificado de Tradición y Libertad: Para qué sirve',
       date: '9/12/2023',
-      imageUrl: '../../../assets/business-woman-holding-seal-documents.jpg',
+      imageUrl: 'assets/business-woman-holding-seal-documents.jpg',
       url:'none'
     },
     {
       title: 'Cómo comprender la información del Certificado Tradición y Libertad',
       date: '28/12/2023',
-      imageUrl: '../../../assets/business-woman-holding-seal-documents.jpg',
+      imageUrl: 'assets/business-woman-holding-seal-documents.jpg',
       url:'none'
     }
   ];
   comprarCertificado() {
     // Handle the purchase logic here
     console.log(`Email: ${this.email}, Document: ${this.document}`);
-    
+
   }
   constructor(private router: Router, private firebase:FirebaseService){
     this.responsiveOptions = [
@@ -78,11 +78,11 @@ export class InicioComponent implements OnInit{
   }
   blogPostsb:any[]=[]
   ngOnInit(): void {
-    
+
 
     this.firebase.getposts().subscribe((res) => {
-      
-     
+
+
 
       res.sort((a, b) => {
         if (a.fecha.seconds === b.fecha.seconds) {
